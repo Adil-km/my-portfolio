@@ -12,10 +12,10 @@ export const NavBar=()=>{
            
           <div className="NavBar-items">
               <Button className="btn" text="Home" glow={true}/>
-              <Button className="btn" text="About" glow={false}/>
-              <Button className="btn" text="Skills" />
-              <Button className="btn" text="Projects" />
-              <Button className="btn" text="Contact" />
+              <Button className="btn" text="About" glow={true}/>
+              <Button className="btn" text="Skills" glow={true}/>
+              <Button className="btn" text="Projects" glow={true}/>
+              <Button className="btn" text="Contact" glow={true}/>
               
           </div>
       </div>

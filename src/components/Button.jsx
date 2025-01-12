@@ -4,8 +4,7 @@ export const Button = ({text,glow=false}) =>{
   return (
   <>
   <button 
-  className="btn" 
-  style={glow ? {backgroundColor:'white'}: undefined} >
+  className={glow ? "btn-glow" : "btn"}>
   {text}
   </button>
   </>);

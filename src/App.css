@@ -62,7 +62,17 @@
   transition: text-shadow 0.1s ease-out;
 }
 /*Glow effect on hover for buttons*/
-.btn:hover{
+.btn-glow{
+  margin: 5px;
+  padding: 5px;
+  background-color: transparent;
+  color:var(--white);
+  border:2px solid var(--white);
+  border-radius: 5px;
+  transition: box-shadow 0.1s ease-out;
+  transition: text-shadow 0.1s ease-out;
+}
+.btn-glow:hover{
   box-shadow: 0 0 5px var(--white);
   text-shadow: 0 0 5px var(--white);
 }
