@@ -3,7 +3,7 @@ import {Button} from './Button.jsx';
 import '../App.css';
 
 
-export const NavBar=()=>{
+export const NavBar=({text})=>{
   return (
     <>
     <div className="NavBar">
