@@ -1,7 +1,7 @@
 import '../App.css'
 
-export const Button = ({text}) =>{
+export const Button = ({text},{style}) =>{
   return (<>
-  <button className="NavBtn">{text}</button>
+  <button className={style}>{text}</button>
   </>);
 }
