@@ -54,7 +54,7 @@
 
 /* button */
 .btn{
-  margin: 0px;
+  margin-right: 10px;
   padding: 5px;
   background-color: transparent;
   color:var(--white);
@@ -65,7 +65,7 @@
 }
 /*Glow effect on hover for buttons*/
 .btn-glow{
-  margin: 0px;
+  margin-right: 10px;
   padding: 5px;
   background-color: transparent;
   color:var(--white);
