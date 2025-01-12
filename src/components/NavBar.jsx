@@ -4,18 +4,19 @@ import '../App.css';
 
 
 export const NavBar=()=>{
+  const logoSrc = "/src/assets/logo.svg";
   return (
     <>
     <div className="NavBar">
       <div className="NavBar-content">
-          <img src="/src/assets/logo.svg" className="NavBar-logo" alt="logo"/>
+          <img src={logoSrc} className="NavBar-logo" alt="logo"/>
            
           <div className="NavBar-items">
               <Button className="btn" text="Home" glow={true}/>
               <Button className="btn" text="About" glow={true}/>
               <Button className="btn" text="Skills" glow={true}/>
               <Button className="btn" text="Projects" glow={true}/>
-              <Button className="btn" text="Contact" glow={true}/>
+              <Button className="btn" text="Contact" glow={}/>
               
           </div>
       </div>
