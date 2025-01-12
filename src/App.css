@@ -5,8 +5,9 @@
 }
 
 .NavBtn{
-  background-color: transparent;
+  background-color: #42445A;
   color: white;
+  border: none;
   border: 2px solid white;
   
 }
@@ -14,6 +15,5 @@
 .NavBar{
 padding: 20px;
 background-image: #42445A;
-min-height: 100vw;
-max-width: 100%;
+
 }
