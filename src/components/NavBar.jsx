@@ -12,6 +12,11 @@ export const NavBar=({text})=>{
            
           <div className="NavBar-items">
               <Button className="btn" text="Home" />
+              <Button className="btn" text="About" />
+              <Button className="btn" text="Skills" />
+              <Button className="btn" text="Projects" />
+              <Button className="btn" text="Contact" />
+              
           </div>
       </div>
     </div>
