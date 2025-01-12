@@ -3,7 +3,7 @@ import {Button} from './Button.jsx';
 import '../App.css';
 
 
-export const NavBar=({text},{glow})=>{
+export const NavBar=({text},{glow=false})=>{
   return (
     <>
     <div className="NavBar">
@@ -11,7 +11,7 @@ export const NavBar=({text},{glow})=>{
           <img src="/src/assets/logo.svg" className="NavBar-logo" alt="logo"/>
            
           <div className="NavBar-items">
-              <Button className="btn" text="Home" glow={true}/>
+              <Button className="btn" text="Home" glow/>
               <Button className="btn" text="About" glow={false}/>
               <Button className="btn" text="Skills" />
               <Button className="btn" text="Projects" />
