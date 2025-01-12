@@ -12,11 +12,10 @@ export const NavBar=()=>{
           <img src={logoSrc} className="NavBar-logo" alt="logo"/>
            
           <div className="NavBar-items">
-              <Button className="btn" text="About" glow={true}/>
-              <Button className="btn" text="Skills" glow={true}/>
-              <Button className="btn" text="Projects" glow={true}/>
-              <Button className="btn" text="Contact" glow={true}/>
-              
+              <Button className="btn" text="About"/>
+              <Button className="btn" text="Skills"/>
+              <Button className="btn" text="Projects"/>
+              <Button className="btn" glow={false} text="Contact"/>
           </div>
       </div>
     </div>

@@ -1,10 +1,10 @@
 import '../App.css'
 
-export const Button = ({text,glow=false}) =>{
+export const Button = ({text,glow=true}) =>{
   return (
   <>
   <button 
-  className={glow ? "btn-glow" : "btn"}>
+  className={glow ? "btn" : "btn-glow"}>
   {text}
   </button>
   </>);
