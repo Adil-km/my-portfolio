@@ -1,5 +1,5 @@
-import {Button} from './components/Button.jsx'
 
+import NavBar from './components/NavBar.jsx';
 
 import './App.css'
 
@@ -7,9 +7,8 @@ function App() {
 
   return (
     <>
-      <div className="NavBar">
-        <Button text="This is a sample text"/>
-      </div>
+      <NavBar/>
+ 
     </>
   )
 }
