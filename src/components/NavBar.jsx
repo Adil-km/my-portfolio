@@ -16,7 +16,7 @@ export const NavBar=()=>{
               <Button className="btn" text="About" glow={true}/>
               <Button className="btn" text="Skills" glow={true}/>
               <Button className="btn" text="Projects" glow={true}/>
-              <Button className="btn" text="Contact" glow={}/>
+              <Button className="btn" text="Contact" glow={true}/>
               
           </div>
       </div>
