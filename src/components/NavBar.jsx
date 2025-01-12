@@ -8,10 +8,10 @@ export const NavBar=({text})=>{
     <>
     <div className="NavBar">
       <div className="NavBar-content">
-          <img src="../assets/logo.svg" className="NavBar-logo" alt="logo"/>
+          <img src="/src/assets/logo.svg" className="NavBar-logo" alt="logo"/>
            
           <div className="NavBar-items">
-              <button className="btn" text="Home" />
+              <Button className="btn" text="Home" />
           </div>
       </div>
     </div>
