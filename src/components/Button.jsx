@@ -1,7 +1,12 @@
 import '../App.css'
 
-export const Button = ({text}) =>{
-  return (<>
-  <button className="btn">{text}</button>
+export const Button = ({text},{glow=false}) =>{
+  return (
+  <>
+  <button 
+  className="btn" 
+
+  style={{backgroundColor:glow ? 'white' : 'red'}}
+  >{text}</button>
   </>);
 }
