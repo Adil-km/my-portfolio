@@ -48,11 +48,12 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin-right: 5px;
+  margin: 10px;
 }
 
+/* button */
 .btn{
-  margin: 30px;
+  margin: 10px;
   padding: 5px;
   background-color: transparent;
   color:var(--white);
