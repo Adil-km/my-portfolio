@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <div className="NavBar">
-        <Button style={"NavBtn"} text="This is a sample text"/>
+        <Button text="This is a sample text"/>
       </div>
     </>
   )
