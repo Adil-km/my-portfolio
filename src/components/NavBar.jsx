@@ -4,7 +4,7 @@ import '../App.css';
 
 
 export const NavBar=()=>{
-  const logoSrc = "/src/assets/logo.svg";
+  const logoSrc = "/public/logo.svg";
   return (
     <>
     <div className="NavBar">
