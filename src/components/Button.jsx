@@ -5,8 +5,8 @@ export const Button = ({text,glow=false}) =>{
   <>
   <button 
   className="btn" 
-
-  style={{backgroundColor:glow ? 'white' : 'red'}}
-  >{text}</button>
+  style={glow ? {backgroundColor:'white'}: undefined} >
+  {text}
+  </button>
   </>);
 }
