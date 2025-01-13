@@ -6,7 +6,11 @@ export const SecondPage = () =>{
     <div className='page-second' id='about'>
       <div className="page-second-content">
           <span>About me👋</span>
-          <p>Hi, I'm Adil, a BVoc Software Development student with a curious mind and a passion for web development 💻. I love learning new things 📚 and finding simple solutions to problems 🔍. My goal is to keep growing my skills and create useful tools with technology 🚀.</p>
+          <p>Hi, I 'm Adil, a BVoc Software Development student with a curious and creative mind. I’m passionate about web development 💻 and love diving into new technologies to craft simple yet effective solutions 🔍.
+          
+          When I’ m not coding, you’ ll find me learning new things📚, drawing🎨, or brainstorming innovative ideas💡.My journey is fueled by a constant drive to grow my skills, explore possibilities, and use technology to make a meaningful impact.
+          
+          I believe in continuous learning and embracing challenges to create tools that truly matter🌟.</p>
       </div>
       </div>
     </>
