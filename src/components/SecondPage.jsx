@@ -1,4 +1,4 @@
-import '../App.csa';
+import '../App.css';
 export const SecondPage = () =>{
   
   return (
