@@ -9,10 +9,10 @@ export const NavBar=()=>{
     <>
     <div className="NavBar">
       <div className="NavBar-content">
-          <img src={logoSrc} className="NavBar-logo" alt="logo"/>
+          <img src={logoSrc} className="NavBar-logo" alt="logo" onClick={()=>{window.location.href="#home"}}/>
            
           <div className="NavBar-items">
-              <Button className="btn" text="About"/>
+              <Button className="btn" text="About" link="#about"/>
               <Button className="btn" text="Skills"/>
               <Button className="btn" text="Projects"/>
               <Button className="btn" text="Contact"/>
