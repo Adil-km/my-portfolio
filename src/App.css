@@ -9,8 +9,9 @@
 }
 :root{
   --white:white;
-  --black: #212529;
-  --black-fade:#343A40;
+  --black: #111111;
+  --black-fade: #212529;
+  /*--black-fade:#343A40;*/
   --navbar-black:#171a1cdd;
 }
 
