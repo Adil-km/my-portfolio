@@ -193,3 +193,14 @@ span{
   max-width: 80%;
   text-align: center;
 }
+
+.page-third{
+  border: 2px solid red;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
