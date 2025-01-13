@@ -59,7 +59,7 @@
   padding: 5px;
   background-color: transparent;
   color:var(--white);
-  border:2px solid var(--white);
+  border:1px solid var(--white);
   border-radius: 5px;
   transition: box-shadow 0.1s ease-out;
   transition: text-shadow 0.1s ease-out;
@@ -70,7 +70,7 @@
   padding: 5px;
   background-color: transparent;
   color:var(--white);
-  border:2px solid var(--white);
+  border:1px solid var(--white);
   border-radius: 5px;
   transition: box-shadow 0.1s ease-out;
   transition: text-shadow 0.1s ease-out;
@@ -148,7 +148,8 @@ span{
 /* second */
 
 .page-second{
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  padding: 5px;
 }
 
 .page-second span{
