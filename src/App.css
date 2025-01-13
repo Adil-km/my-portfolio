@@ -8,7 +8,8 @@
   */
 }
 :root{
-  --white:white;
+  --white:#FFFFFF;
+  --white-faded:#DADADA;
   --black: #111111;
   --black-fade: #212529;
   /*--black-fade:#343A40;*/
@@ -78,6 +79,12 @@
 .btn-glow:hover{
   box-shadow: 0 0 5px var(--white);
   text-shadow: 0 0 5px var(--white);
+}
+
+hr{
+  width:95%;
+  margin: 30px;
+  border-color: var(--white-faded);
 }
 
 /*pages*/

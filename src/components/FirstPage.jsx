@@ -18,7 +18,7 @@ export const FirstPage = () =>{
           <img src={profileSrc} className="page-first-img" alt="profile pic"/>
         </div>
       </div>
-      
+      <hr/>
 
     </>
     );
