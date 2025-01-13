@@ -90,11 +90,14 @@ body{
   min-height: 1000px;
   width: 100vw;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   background-color: var(--black);
+  color:var(--white);
 }
 
+/* first */
 .page-first{
   display: flex;
   flex-direction: column;
@@ -113,25 +116,24 @@ body{
 }
 
 .page-first-img{
-  background-image: url('../profile.png');
-  width: 300px;
-  height: 300px;
+  background-repeat: no-repeat;
+  width: 240px;
   background-position: center;
-  background-size: 400px;
-  border-radius: 50%;
+  background-size: contain;
   margin-top: 10px;
 }
 
-.page-first-discription{
+.page-first-text{
   display: flex;
   flex-direction: column;
+  align-items: start;
   margin-left: 20px;
 }
 
-.page-first-discription .btn{
-  min-width:7em;
-  margin-left: 100px;
+.page-first-discription{
+  margin-bottom: 10px
 }
+
 
 span{
   color: var(--white);
@@ -142,3 +144,22 @@ span{
   font-weight: bold;
 }
 
+/* second */
+
+.page-second{
+  border: 2px solid red;
+}
+
+.page-second span{
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+  padding: 5px 10px;
+  
+}
+
+.page-second p{
+  color: var(--white);
+  padding:10px;
+  
+}
