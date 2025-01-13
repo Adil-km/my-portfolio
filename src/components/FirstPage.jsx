@@ -15,7 +15,7 @@ export const FirstPage = () =>{
               <Button className="btn" text="Let's connect"/>
           </div>
 
-          <img src={profileSrc} className="page-first-img" alt="profile pic">
+          <img src={profileSrc} className="page-first-img" alt="profile pic"/>
         </div>
       </div>
             
