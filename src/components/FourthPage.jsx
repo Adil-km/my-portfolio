@@ -1,14 +1,14 @@
-import {project} from './data.jsx';
+import { project } from './data.jsx';
 
 import { Button } from './Button.jsx';
 
 import '../App.css';
 
-export const FourthPage = ()=>{
-  
+export const FourthPage = () => {
+
   const projectList = project.map(project =>
-  <div className="card-container" key={project.id}>
-  <div className="card-items">
+
+    <div className="card-items" key={project.id}>
       <h3>{project.title}</h3>
       <p>{project.discription}</p>
       <ul>{project.features.map((features,index) => (
@@ -24,15 +24,24 @@ export const FourthPage = ()=>{
       
       </div>
       </div>
-    </div>
-);
-  
+
+  );
+
   return (
     <>
-    <h2>My projects</h2>
-    {projectList}
-    <hr/>
+      <div className="page-fourth" id="projects">
+            <div className="page-fourth-content">
+            <span>My projects</span>
+              <div className="project-container">
+              <div className="card-container" >
+              {projectList}
+              </div>
+                
+              </div>
+            </div>
+          </div>
+          <hr/>
     </>
-    
-    )
+
+  )
 }
