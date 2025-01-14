@@ -5,8 +5,8 @@ export const project = [
   discription: 'A simple to-do list application to add, edit, and delete tasks. Tasks are saved using local storage.',
   features:['Task management','Local storage integration','Responsive UI'],
   tech:['HTML','CSS','JavaScript'],
-  demo:'#null',
-  code:'#null'
+  demo:'https://to-do-list-demo.pages.dev/',
+  code:'https://github.com/Adil-km/to-do-list'
   },
   
   {
@@ -15,8 +15,8 @@ export const project = [
   discription: 'Generate QR codes for any text or URL using an API. The QR codes are downloadable for easy use.',
   features:['Generate QR codes for any input text or URL','API integration','Downloadable QR codes for offline use'],
   tech:['HTML','CSS','JavaScript'],
-  demo:'#null',
-  code:'#null'
+  demo:'https://qr-code-demo.pages.dev/',
+  code:'https://github.com/Adil-km/qr-code-genrator'
   },
   
   {
@@ -25,8 +25,8 @@ export const project = [
   discription: 'Convert a single image to a PDF file using an API. A simple tool for quick image-to-PDF conversions.',
   features:['PDF generation via API','Download the generated PDF','Easy-to-use interface'],
   tech:['HTML','CSS','JavaScript'],
-  demo:'#null',
-  code:'#null'
+  demo:'https://img-to-pdf.pages.dev/',
+  code:'https://github.com/Adil-km/img-to-pdf-converter'
   }
   ];
   
