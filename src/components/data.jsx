@@ -29,3 +29,48 @@ export const project = [
   code:'#null'
   }
   ];
+  
+  
+  export const skills = [
+  {
+    id:1,
+    skill:'HTML',
+    level:'Proficient'
+  },
+  {
+    id:2,
+    skill:'CSS',
+    level:'Proficient'
+  },
+  
+  {
+    id:3,
+    skill:'JavaScript',
+    level:'Intermediate'
+  },
+  {
+    id:4,
+    skill:'ReactJs',
+    level:'Beginner'
+  },
+  {
+    id:5,
+    skill:'C',
+    level:'Intermediate'
+  },
+  {
+    id:6,
+    skill:'C++',
+    level:'Intermediate'
+  },
+  {
+    id:7,
+    skill:'JAVA',
+    level:'Beginner'
+  },
+  {
+    id:8,
+    skill:'GitHub',
+    level:'Intermediate'
+  }
+  ];

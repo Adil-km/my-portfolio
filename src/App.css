@@ -91,7 +91,39 @@ hr{
   border-color: var(--white-faded-1);
 }
 
-/* cards */
+/* skill card */
+
+.skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--black);
+      border: 1px solid var(--white);
+      border-radius: 6px;
+      
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0px 10px var(--white-faded);
+      
+      
+    }
+    .card h3 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: var(--white);
+    }
+    .card p {
+      margin: 10px 0;
+      color: var(--white-faded);
+    }
+
+/*  project cards */
 .card-container{
     display: flex;
       justify-content: center;
@@ -138,6 +170,7 @@ hr{
     font-size: 0.9rem;
     color: var(--white-faded-2);
   }
+  
   
   .bubble-icons{
     display: flex;
