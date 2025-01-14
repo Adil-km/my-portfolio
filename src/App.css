@@ -33,7 +33,7 @@ html{
 
 .NavBar-content{
   min-height: 70px;
-  background-color: tran#42445A;
+  background-color: var(--navbar-black);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
