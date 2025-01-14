@@ -307,7 +307,7 @@ span{
 }
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 10px var(--white);
+  box-shadow: 0 5px 10px var(--white-faded-2);
 }
 
 .card h3 {
