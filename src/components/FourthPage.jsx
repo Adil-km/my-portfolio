@@ -17,7 +17,7 @@ export const FourthPage = () => {
           </ul>
       <div className="bubble-icons">
         {project.tech.map((tech, index) =>(
-          <span key={index} id="tech">{tech}</span>
+          <span key={index}>{tech}</span>
           ))}
         </div>
         
@@ -33,7 +33,7 @@ export const FourthPage = () => {
     <>
       <div className="page-fourth" id="projects">
             <div className="page-fourth-content">
-            <span>My projects</span>
+            <span id="span">My projects</span>
               
               <div className="card-container" >
               {projectList}
