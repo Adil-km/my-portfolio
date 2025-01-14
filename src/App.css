@@ -33,13 +33,13 @@ html{
 
 .NavBar-content{
   min-height: 70px;
-  background-color: var(--navbar-black);
+  background-color: transparent;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   /*Nav bar blur*/
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(5px);
 }
 
 .NavBar-logo{
@@ -87,7 +87,7 @@ html{
 
 hr{
   width:95%;
-  margin:50px 30px;
+  margin:30px;
   border-color: var(--white-faded-1);
 }
 
