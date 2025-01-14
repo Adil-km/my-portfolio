@@ -282,8 +282,10 @@ span{
 }
 .skill-container {
   border:2px solid cyan;
+  
   display: flex;
 justify-content: center;
+align-items: center;
 gap: 30px;
 flex-wrap: wrap;
      
@@ -292,7 +294,7 @@ flex-wrap: wrap;
       background: var(--black);
       border: 1px solid var(--white);
       border-radius: 6px;
-      max-width: 200px;
+      width: 200px;
      
       padding: 20px;
       text-align: center;
