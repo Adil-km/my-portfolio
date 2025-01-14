@@ -39,7 +39,7 @@ html{
   justify-content: space-between;
   align-items: center;
   /*Nav bar blur*/
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(2px);
 }
 
 .NavBar-logo{
