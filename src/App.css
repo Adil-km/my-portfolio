@@ -261,10 +261,8 @@ span{
 
 .page-third{
   border: 2px solid yellow;
-  padding: 20px;
-  width:100%;
-  margin: auto;
   height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -272,10 +270,10 @@ span{
 }
 
 .page-third-content{
-  
+  border:2px solid red;
   padding: 20px;
-      max-width: 1200px;
-      margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* skill card */
@@ -290,7 +288,7 @@ span{
       gap: 20px;
      
     }
-   .card {
+  .card {
       background: var(--black);
       border: 1px solid var(--white);
       border-radius: 6px;
@@ -298,18 +296,21 @@ span{
       padding: 20px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+    
+    
+  }
     .card:hover {
       transform: translateY(-5px);
       box-shadow: 0 0px 10px var(--white-faded);
       
       
-    }
-    .card h3 {
+  }
+  .card h3 {
       margin: 0;
       font-size: 1.5rem;
       color: var(--white);
-    }
+  }
+  
     .card p {
       margin: 10px 0;
       color: var(--white-faded);
