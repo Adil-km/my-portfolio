@@ -19,8 +19,8 @@ export const FourthPage = () => {
         {project.tech.map((tech, index) =>(
           <span key={index}>{tech}</span>
           ))};
-      <Button link="project.demo" text="view demo"/>
-      <Button link="project.code" text="view code"/>
+      <Button link={project.demo} text="view demo"/>
+      <Button link={project.code} text="view code"/>
       
       </div>
       </div>
