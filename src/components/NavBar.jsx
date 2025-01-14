@@ -14,7 +14,7 @@ export const NavBar=()=>{
           <div className="NavBar-items">
               <Button className="btn" text="About" link="#about"/>
               <Button className="btn" text="Skills" link="#skills"/>
-              <Button className="btn" text="Projects" link="projects"/>
+              <Button className="btn" text="Projects" link="#projects"/>
               <Button className="btn" text="Contact"/>
           </div>
       </div>
