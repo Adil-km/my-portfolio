@@ -14,7 +14,7 @@
   --black: #111111;
   --black-fade: #212529;
   /*--black-fade:#343A40;*/
-  --navbar-black:#171a1cdd;
+  --navbar-black:#171A1CC2;
 }
 
 html{
@@ -33,7 +33,7 @@ html{
 
 .NavBar-content{
   min-height: 70px;
-  background-color: transparent;
+  background-color: tran#42445A;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
