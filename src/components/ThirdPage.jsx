@@ -10,7 +10,7 @@ export const ThirdPage = () =>{
   );
     return (
         <>
-          <div className="page-third">
+          <div className="page-third" id="skills">
             <div className="page-third-content">
             <span>My skills</span>
               <div className="skill-container">
