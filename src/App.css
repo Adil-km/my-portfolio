@@ -210,6 +210,14 @@ body {
   margin-top: 10px;
 }
 
+/* to avoid clipping outside the screen */
+@media(max-width:900px){
+  .page-first-img{
+    max-width: 90vw;
+    margin-top: 70px;
+  }
+}
+
 .page-first-text {
   display: flex;
   flex-direction: column;
