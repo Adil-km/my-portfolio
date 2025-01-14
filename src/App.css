@@ -307,7 +307,7 @@ span{
 }
 .card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 10px var(--white-faded-2);
+  box-shadow: 0 5px 10px var(--white-faded-1);
 }
 
 .card h3 {
@@ -318,5 +318,5 @@ span{
   
 .card p {
   margin: 10px 0;
-  color: var(--white-faded);
+  color: var(--white-faded-2);
 }
