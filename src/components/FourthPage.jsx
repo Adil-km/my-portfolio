@@ -17,7 +17,7 @@ export const FourthPage = () => {
           </ul>
       <div className="bubble-icons">
         {project.tech.map((tech, index) =>(
-          <span key={index}>{tech}</span>
+          <span key={index} id="tech">{tech}</span>
           ))}
         </div>
         
