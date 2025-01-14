@@ -11,7 +11,7 @@ export const Main = ()=>{
       <FirstPage/>
       <SecondPage/>
       <ThirdPage/>
-      <FourthPage/>
+      
     </div>
     </>
   );
