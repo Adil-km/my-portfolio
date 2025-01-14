@@ -271,8 +271,10 @@ span{
 
 .page-third-content{
   border:2px solid red;
-  height: 100vh;
-  width: 100%;
+  display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
 }
 
 /* skill card */
