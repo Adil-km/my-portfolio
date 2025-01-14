@@ -19,6 +19,7 @@ export const ThirdPage = () =>{
               </div>
             </div>
           </div>
+          <hr/>
         </>
     )
 }

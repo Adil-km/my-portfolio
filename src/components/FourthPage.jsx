@@ -31,6 +31,7 @@ export const FourthPage = ()=>{
     <>
     <h2>My projects</h2>
     {projectList}
+    <hr/>
     </>
     
     )
