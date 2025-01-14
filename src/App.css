@@ -98,7 +98,7 @@ hr{
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
-    .card {
+   .card {
       background: var(--black);
       border: 1px solid var(--white);
       border-radius: 6px;
