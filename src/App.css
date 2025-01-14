@@ -272,7 +272,10 @@ span{
 }
 
 /* skill card */
+*{
 
+  border:2px solid #BAFF00;
+}
 .skill-container {
   border:2px solid cyan;
   display: grid;
