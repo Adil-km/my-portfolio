@@ -292,8 +292,8 @@ flex-wrap: wrap;
       background: var(--black);
       border: 1px solid var(--white);
       border-radius: 6px;
-      width: 250px;
-      height: 250px;
+      max-width: 200px;
+     
       padding: 20px;
       text-align: center;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
