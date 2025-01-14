@@ -275,9 +275,11 @@ span{
 
 .skills-container {
   border:2px solid cyan;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+  
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
     }
    .card {
       background: var(--black);
