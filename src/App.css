@@ -91,6 +91,69 @@ hr{
   border-color: var(--white-faded-1);
 }
 
+/* cards */
+.card-container{
+    display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    
+  }
+  .card-items{
+    background-color:var(--navbar-black);
+    border:1px solid var(--white-faded-1);
+    border-radius:5px;
+    width:300px;
+    padding:20px;
+    text-align:left;
+    transition: border 0.1s ease-out, box-shadow 0.1s ease-out ,transform 0.1s ease-out;
+    
+  }
+  
+  .card-items:hover{
+    border:1px solid var(--white-faded-2);
+    box-shadow:0 0 8px var(--white-faded-1);
+    transform: translateY(-2px);
+  }
+  .card-items h3{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:var(--white);
+  }
+  
+  .card-items p{
+    font-size: 1rem;
+      margin-bottom: 15px;
+      color: var(--white);
+  }
+  
+  .card-items ul{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .card-items ul li{
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: var(--white-faded-2);
+  }
+  
+  .bubble-icons{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .bubble-icons span{
+    background-color: #333333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--white-faded-2);
+    
+  }
+
 /*pages*/
 body{
   background-color: var(--black);
