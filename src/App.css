@@ -44,7 +44,7 @@ html {
 }
 
 .NavBar-logo {
-  padding-left: 10px;
+  padding-left: 30px;
   width: 50px;
   transition: filter 0.1s ease-out;
 }
@@ -312,6 +312,11 @@ span {
   align-items: center;
 }
 
+.page-fourth-content span {
+  color: var(--white);
+  font-weight: 700;
+  text-decoration: underline;
+}
 
 
 /* skill card */
