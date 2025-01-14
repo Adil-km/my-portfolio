@@ -266,14 +266,14 @@ span{
   margin: auto;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
 /* skill card */
 
-.skills-container {
+.skill-container {
   border:2px solid cyan;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
