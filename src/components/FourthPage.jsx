@@ -18,7 +18,7 @@ export const FourthPage = () => {
       <div className="bubble-icons">
         {project.tech.map((tech, index) =>(
           <span key={index}>{tech}</span>
-          ))};
+          ))}
       <Button link={project.demo} text="view demo"/>
       <Button link={project.code} text="view code"/>
       
