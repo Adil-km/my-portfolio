@@ -297,6 +297,7 @@ span{
 justify-content: center;
 gap: 30px;
 flex-wrap: wrap;
+margin:20px;
      
     }
   .card {
