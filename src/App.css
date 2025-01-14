@@ -292,7 +292,7 @@ span{
 }
 .skill-container {
   border:2px solid cyan;
-  
+  width:90vw;
   display: flex;
 justify-content: center;
 gap: 30px;
@@ -313,7 +313,7 @@ flex-wrap: wrap;
   }
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0px 10px var(--white-faded);
+      box-shadow: 0 0px 10px var(--white);
       
       
   }
