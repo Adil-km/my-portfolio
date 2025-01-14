@@ -32,12 +32,12 @@ export const FourthPage = () => {
       <div className="page-fourth" id="projects">
             <div className="page-fourth-content">
             <span>My projects</span>
-              <div className="project-container">
+              
               <div className="card-container" >
               {projectList}
               </div>
                 
-              </div>
+  
             </div>
           </div>
           <hr/>
