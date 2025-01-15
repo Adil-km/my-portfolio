@@ -34,6 +34,7 @@ html {
 }
 
 .NavBar-content {
+  width: 100vw;
   min-height: 70px;
   background-color: var(--navbar-black);
   display: flex;
