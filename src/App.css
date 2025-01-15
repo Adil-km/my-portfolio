@@ -10,7 +10,7 @@
 
 :root {
   --white: #FFFFFF;
-  --white-secondary:#DEDEDE;
+  --white-secondary:#DDDDDD;
   --white-faded-1: #6E6E6E;
   --white-faded-2: #c0c0c0;
   --black: #111111;
@@ -134,7 +134,7 @@ hr {
 .card-items p {
   font-size: 1rem;
   margin-bottom: 15px;
-  color: var(--white);
+  color: var(--white-secondary);
 }
 
 .card-items ul {
@@ -217,6 +217,12 @@ body {
     max-width: 90vw;
     margin-top: 70px;
   }
+  .page-first-text span{
+   font-size: 1.7em;
+  }
+  .profile-name{
+   font-size: 2.7em;
+  }
 }
 
 .page-first-text {
@@ -264,13 +270,13 @@ span {
 }
 
 .page-second-content span {
-  color: var(--white-secondary);
+  color: var(--white);
   font-weight: 700;
   text-decoration: underline;
 }
 
 .page-second-content p {
-  color: var(--white);
+  color: var(--white-secondary);
   padding: 10px 20px;
   font-size: 1.2em;
   max-width: 80%;
