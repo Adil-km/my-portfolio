@@ -1,15 +1,15 @@
 
 import {NavBar} from './components/NavBar.jsx';
 import {Main} from './components/Main.jsx'
-
-import './App.css'
+import { Contact } from './components/Contact.jsx';
 
 function App() {
 
   return (
     <>
-      <NavBar/>
-      <Main/>
+      {/* <NavBar/>
+      <Main/> */}
+      <Contact/>
  
     </>
   )
