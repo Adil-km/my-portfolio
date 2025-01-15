@@ -10,6 +10,7 @@
 
 :root {
   --white: #FFFFFF;
+  --white-secondary:#E8E8E8;
   --white-faded-1: #6E6E6E;
   --white-faded-2: #c0c0c0;
   --black: #111111;
@@ -263,7 +264,7 @@ span {
 }
 
 .page-second-content span {
-  color: var(--white);
+  color: var(--white-secondary);
   font-weight: 700;
   text-decoration: underline;
 }
