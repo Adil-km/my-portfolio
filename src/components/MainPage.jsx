@@ -5,7 +5,7 @@ import { ThirdPage } from './ThirdPage.jsx';
 import { FourthPage } from './FourthPage.jsx';
 
 
-export const Main = ()=>{
+export const MainPage = ()=>{
   
   return (
     <>
