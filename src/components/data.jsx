@@ -70,7 +70,7 @@ export const project = [
   },
   {
     id:8,
-    skill:'GitHub',
+    skill:'Git',
     level:'Intermediate'
   }
   ];
