@@ -2,6 +2,7 @@ import { Button } from "./Button"
 import '../App.css'
 import React, { useState } from 'react';
 
+
 export const Contact= () =>{
     // Optional: Track form data using useState if needed
     const [formData, setFormData] = useState({
