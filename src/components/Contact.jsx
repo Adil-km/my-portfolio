@@ -3,15 +3,18 @@ import '../App.css'
 
 
 export const Contact= () =>{
-    const show = () =>{
-      alert("hii");
+    const show = (event) =>{
+      const formData = new FormData(event.target);
+      const q = formData.get("query");
+
+      alert(q);
     }
   
   
     return (
-      <form >
+      <form onSubmit={show}>
         <label htmlFor="formName">Name</label>
-        <input type="text" id="formName" />
+        <input name="query" id="formName" />
 
         <button type="submit">submit</button>
       </form>
