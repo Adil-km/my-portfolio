@@ -403,7 +403,7 @@ span {
       margin: 10px;
       min-width: 300px;
     }
-    input{
+    .formInput{
       padding-top: 10px;
       margin-top: 10px;
       color: white;
@@ -417,15 +417,15 @@ span {
       font-weight: 600;
     }
     
-    input:focus{
+    .formInput:focus{
       border-bottom: 2px solid var(--white);
       
     }
     
-    input::placeholder{
+    .formInput::placeholder{
       color:var(--white-faded-2);
     }
-    input:focus::placeholder {
+    .formInput:focus::placeholder {
     color: var(--white);
     }
     
