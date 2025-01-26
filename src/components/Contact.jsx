@@ -10,20 +10,24 @@ export const Contact= () =>{
       const email = formData.get("email");
       const phone = formData.get("tel");
       const message = formData.get("text");
-
+      alert(name);
       }
   
     return (
       <>
-      <div className="formDiv">
-      <form onSubmit={show}>
-        <input name="name" placeholder="Enter your Name" id="formName"/>
-        <input name="email" placeholder="Enter your Email" id="formEmail"/>
-        <input name="phone" type="tel" placeholder="Enter your Phone number" id="formPhone" />
-        <input name="message" type="text" placeholder="Enter your message" id="formMessage"/>
-        <Button type="submit" text="submit"/>
-      </form>
-      </div>
+      <div className="form-container">
+        <h1>Contact me</h1>
+        
+        <form onSubmit={show}>
+        
+          <input type="text" name="name" placeholder="Enter your Name"/>
+          <input type="email" name="email" placeholder="Enter your Email"/>
+          <input type="text" name="message" placeholder="Enter your Message"/>
+          <div class="formBtnDiv">
+              <Button text="submit" type="submit"/>
+          </div>
+         </form>
+        </div>
       </>
     );
   }
