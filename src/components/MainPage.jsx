@@ -17,4 +17,5 @@ export const MainPage = ()=>{
     </div>
     </>
   );
+  
 }

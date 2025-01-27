@@ -1,6 +1,8 @@
 import '../App.css'
 
 export const Button = ({text, glow=true, link, type="button"}) =>{
+
+  
   return (
   <>
   <button 
