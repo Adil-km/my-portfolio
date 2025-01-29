@@ -42,7 +42,7 @@ export const Contact= () =>{
           <textarea rows={1} onChange={formChange} value={formData.message} name="message" className="formInput" placeholder="Enter your Message" required/>
           
           <div className="formBtnDiv">
-              <Button text="submit" type="submit"/>
+              <Button className="btn-glow" text="submit" onClick={(e)=>{formSubmit(e)}}/>
           </div>
           
          </form>
