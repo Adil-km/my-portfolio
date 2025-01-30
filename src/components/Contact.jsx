@@ -31,6 +31,10 @@ export const Contact= () =>{
     return (
       <>
       <div className="form-container">
+        
+        <div className="form-back-btn">
+        <Button className="btn" text="Go back" link="/"/>
+        </div>
         <h1>Contact me</h1>
         
         <form onSubmit={formSubmit}>
@@ -42,7 +46,7 @@ export const Contact= () =>{
           <textarea rows={1} onChange={formChange} value={formData.message} name="message" className="formInput" placeholder="Enter your Message" required/>
           
           <div className="formBtnDiv">
-              <Button className="btn-glow" text="submit" onClick={(e)=>{formSubmit(e)}}/>
+              <button className="btn-glow" onClick={(e)=>{formSubmit(e)}}>Submit</button>
           </div>
           
          </form>

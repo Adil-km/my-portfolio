@@ -1,14 +1,10 @@
 import {Button} from './Button.jsx';
 import '../App.css';
-import { useNavigate } from 'react-router-dom';
 
 
 export const NavBar=()=>{
   const logoSrc = "/logo.svg";
-  const navigate = useNavigate();
-  const navigateToContact = () => {
-    navigate('./Contact');  // Navigate to the Contact page
-  };
+ 
 
   return (
     <>
@@ -20,8 +16,7 @@ export const NavBar=()=>{
               <Button className="btn" text="About" link="#about"/>
               <Button className="btn" text="Skills" link="#skills"/>
               <Button className="btn" text="Projects" link="#projects"/>
-              <Button className="btn" text="Contact" onClick={navigateToContact}/>
-              <button className="btn" onClick={navigateToContact}>contact</button>
+              <Button className="btn" text="Contact" link="/contact"/>
           </div>
       </div>
     </div>
