@@ -2,6 +2,7 @@
 import {NavBar} from './components/NavBar.jsx';
 import {MainPage} from './components/MainPage.jsx'
 import { Contact } from './components/Contact.jsx';
+import {Footer} from './components/Footer.jsx';
 import { Route, Routes, useLocation } from "react-router-dom"
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<MainPage/>}/>
         <Route path="/contact" element={<Contact/>}/>
     </Routes>
+    {/* <Footer /> */}
     
     </>
   )

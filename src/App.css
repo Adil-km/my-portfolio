@@ -460,3 +460,26 @@ span {
       justify-content: end;
       margin-top: 20px
     }
+
+    /* footer */
+
+  
+    .footer{
+      padding: 20px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+    }
+    .footer div{
+      margin: 20px;
+      min-height: 100px;
+    }
+    .footer .location{
+      background-color: rgb(255, 97, 97);
+    }
+
+    .footer .social-links{
+      background-color: rgb(114, 114, 255);
+    }
