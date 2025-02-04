@@ -18,7 +18,7 @@
 
   /*--black-fade:#343A40;*/
   
-  --navbar-black: #171A1CC2;
+  --navbar-black: #222526c2;
 }
 
 html {
@@ -463,10 +463,7 @@ span {
 
     /* footer */
 
-    *{
-      /* border: 2px solid red; */
-    }
-
+ 
     footer{
       display: flex;
       flex-direction: column;
@@ -545,7 +542,7 @@ span {
 
     footer .copyright{
       margin-top: 20px;
-      color: var(--white-faded-2);
+      color: var(--white-faded-1);
     }
       
     
