@@ -16,21 +16,29 @@ export const Footer= ()=>{
                 </div>
 
                 <div className="link-container">
-                    <span>Other Links</span>
+                    <span>Follow me on</span>
+
                     <ul className="links">
                         <li>
-                        <img src={icon1} className="icon-1" alt="linkedin icon" onClick={()=>{window.location.href="#"}}/>
-                            <a href="">social media link</a>
+                            <a href="https://www.linkedin.com/in/Adil-km">
+
+                            <img src={icon1} className="icon-1" alt="linkedin icon"/>
+                            LinkedIn
+                            </a>
+                            
                         </li>
 
                         <li>
-                        <img src={icon2} className="icon-2" alt="linkedin icon" onClick={()=>{window.location.href="#"}}/>
-                            <a href="">social media link</a>
+                            <a href="https://github.com/Adil-km/">
+                            <img src={icon2} className="icon-2" alt="linkedin icon"/>
+                            GitHub</a>
                         </li>
 
                         <li>
-                        <img src={icon3} className="icon-2" alt="linkedin icon" onClick={()=>{window.location.href="#"}}/>
-                            <a href="">social media link</a>
+                    
+                            <a href="https://www.instagram.com/adil_km_/">
+                            <img src={icon3} className="icon-2" alt="linkedin icon"/>
+                            Instagram</a>
                         </li>
                     </ul>
                 </div>

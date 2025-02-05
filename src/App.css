@@ -493,7 +493,7 @@ span {
     }
     
     footer blockquote{
-      color: var(--white);
+      color: var(--white-faded-2);
       margin: 20px 0;
       
     }
@@ -525,20 +525,18 @@ span {
       padding: 15px 0;
     }
     
+    footer .link-container .links{
+      position: relative;
+    }
+
     footer .link-container a{
       color: var(--white);
       text-decoration: none;
-      position: relative;
-      margin-left: 40px;
-      top: 5px;
     }
 
     footer .link-container img{
       width: 30px;
-      position: absolute;
-
     }
-
 
     footer .copyright{
       margin-top: 20px;
