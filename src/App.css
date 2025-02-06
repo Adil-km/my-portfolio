@@ -485,6 +485,20 @@ span {
       min-width: 75%;
     }
 
+  
+
+    @media(max-width:900px){
+     
+      footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+    }
+
+
+
     footer .footer-btn{
       padding: 20px;
       display: flex;
@@ -506,7 +520,7 @@ span {
     
     footer .link-container::before{
       content: "";
-      border: 1px solid var(--white-faded-2);
+      border: 1px solid var(--white-faded-1);
       display: block;
       position: absolute;
       top: 10px;
@@ -535,12 +549,14 @@ span {
     }
 
     footer .link-container img{
-      width: 30px;
+      width: 40px;
+      margin-right: 10px;
+      vertical-align: middle;
+
     }
 
     footer .copyright{
       margin-top: 20px;
       color: var(--white-faded-1);
     }
-      
     
