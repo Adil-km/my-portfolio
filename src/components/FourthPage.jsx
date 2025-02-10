@@ -42,7 +42,6 @@ export const FourthPage = () => {
   
             </div>
           </div>
-          <hr/>
     </>
 
   )
