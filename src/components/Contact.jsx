@@ -25,6 +25,7 @@ export const Contact= () =>{
         email : '',
         message : ''
       })
+      alert("Form submitted Successfully!");
     };
   
   

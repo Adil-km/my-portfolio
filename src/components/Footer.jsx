@@ -11,7 +11,7 @@ export const Footer= ()=>{
             <div className="footer-content">
 
                 <div className="footer-btn">    
-                    <blockquote>"Stay humble. Work hard. Be kind."</blockquote>
+                    <span className="quote">"Stay humble. Work hard. Be kind."</span>
                     <Button className="btn" text="Get in touch" link="/contact"/>
                 </div>
 

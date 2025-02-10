@@ -438,7 +438,6 @@ span {
     
     .formInput:focus{
       border-bottom: 2px solid var(--white);
-      
     }
     
     .formInput::placeholder{
@@ -485,8 +484,6 @@ span {
       min-width: 75%;
     }
 
-  
-
     @media(max-width:900px){
      
       footer .footer-content{
@@ -494,10 +491,8 @@ span {
         flex-direction: column;
         align-items: center;
       }
-      
+    
     }
-
-
 
     footer .footer-btn{
       padding: 20px;
@@ -506,10 +501,10 @@ span {
       align-items: flex-start;
     }
     
-    footer blockquote{
+    footer .quote{
       color: var(--white-faded-2);
       margin: 20px 0;
-      
+      font-size: 1.2em;
     }
     
     footer .link-container{
@@ -556,7 +551,7 @@ span {
     }
 
     footer .copyright{
-      margin-top: 20px;
+      margin: 20px 0;
       color: var(--white-faded-1);
     }
     
