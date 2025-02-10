@@ -2,11 +2,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
   font-family: "Kanit", serif;
 
 /*   
-  border: 1px solid rgb(81, 255, 0); */
+  border: 1px solid rgb(81, 255, 0);
+*/
   
 }
 
@@ -17,6 +17,7 @@
   --white-faded-2: #c0c0c0;
   --black: #111111;
   --black-fade: #212529;
+  --black-fade-alternative: #333333;
 
   /*--black-fade:#343A40;*/
   
@@ -165,7 +166,8 @@ hr {
 }
 
 .bubble-icons span {
-  background-color: #333333;
+  background-color: var(--black-fade-alternative);
+
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -507,6 +509,7 @@ span {
       color: var(--white-faded-2);
       margin: 20px 0;
       font-size: 1.2em;
+      font-family: cursive;
     }
     
     footer .link-container{
