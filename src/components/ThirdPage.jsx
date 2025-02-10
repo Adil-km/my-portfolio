@@ -12,7 +12,7 @@ export const ThirdPage = () =>{
         <>
           <div className="page-third" id="skills">
             <div className="page-third-content">
-            <span>My skills</span>
+            <span>My skills🎮</span>
               <div className="skill-container">
               {skillList}
                 
