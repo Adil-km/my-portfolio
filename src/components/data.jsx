@@ -2,7 +2,7 @@ export const project = [
   {
   id:1,
   title: 'To-Do List',
-  discription: 'A simple to-do list application to add, edit, and delete tasks. Tasks are saved using local storage.',
+  discription: 'A simple to-do list application to add and delete tasks. Tasks are saved using local storage.',
   features:['Task management','Local storage integration','Responsive UI'],
   tech:['HTML','CSS','JavaScript'],
   demo:'https://to-do-list-demo.pages.dev/',
