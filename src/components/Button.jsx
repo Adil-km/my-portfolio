@@ -7,9 +7,11 @@ export const Button = ({text, glow=true, link}) =>{
 
   return (
   <>
+
   {(location.pathname === '/')?
   (
-    //for smooth scrolling
+    //if current page is in home
+    //for smooth scrolling, I used button instead of Link
   <button className={glow ? "btn-glow" : "btn"} onClick={()=>{window.location.href=link}}>{text}</button>
   ):(
     <Link 
