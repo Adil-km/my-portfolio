@@ -1,6 +1,6 @@
 import '../App.css';
 export const SecondPage = () =>{
-  
+
   return (
     <>
     <div className='page-second' id='about'>
