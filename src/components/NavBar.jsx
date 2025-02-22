@@ -3,7 +3,7 @@ import '../App.css';
 
 
 export const NavBar=()=>{
-  const logoSrc = "/logo.svg";
+  const logoSrc = "./logo.svg";
  
 
   return (

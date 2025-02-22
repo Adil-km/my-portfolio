@@ -2,9 +2,9 @@ import { Button } from "./Button";
 import '../App.css';
 
 export const Footer= ()=>{
-    const icon1 = "/icon1.svg";
-    const icon2 = "/icon2.svg";
-    const icon3 = "/icon3.svg";
+    const icon1 = "./icon1.svg";
+    const icon2 = "./icon2.svg";
+    const icon3 = "./icon3.svg";
     return(
     <>
         <footer>
