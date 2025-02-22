@@ -11,7 +11,7 @@ export const FirstPage = () =>{
           <div className="page-first-text">
               <span>Hello, welcome</span>
               <span className="profile-name">I'm Adil</span>
-              <span className="page-first-discription">student at Farook college</span>
+              <span className="page-first-discription">Student at Farook college</span>
               <Button className="btn" link="https://www.linkedin.com/in/adil-km" text="Let's connect"/>
           </div>
 
