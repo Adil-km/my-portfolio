@@ -19,7 +19,7 @@ export const Button = ({text, glow=true, link}) =>{
 	
 	
     <Link 
-    to={"#/"+link}
+    to={link}
     //if doesn't want the glow effect 
     className={glow ? "btn-glow" : "btn"}>
     {text}
