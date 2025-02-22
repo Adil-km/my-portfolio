@@ -3,7 +3,7 @@ import { Button } from './Button.jsx';
 import '../App.css';
 
 export const FirstPage = () =>{
-  const profileSrc= '/profile.png';
+  const profileSrc= './profile.png';
   return (
     <>
       <div className="page-first"  id='home'>
