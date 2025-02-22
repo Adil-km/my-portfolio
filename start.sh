@@ -9,3 +9,5 @@ read MSG
 git commit -m "$MSG"
 
 git push origin new-branch
+
+npm run deploy
