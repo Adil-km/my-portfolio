@@ -16,7 +16,7 @@ function App() {
       {location.pathname !== "/contact" && <NavBar />}
     <Routes>
         <Route path="/" element={<MainPage/>}/>
-        <Route path="/contact" element={<Contact/>}/>
+        <Route path="./contact" element={<Contact/>}/>
     </Routes>
     {/* <Footer /> */}
     
