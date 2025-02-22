@@ -13,11 +13,10 @@ export const Button = ({text, glow=true, link}) =>{
     //if current page is in home
     //for smooth scrolling, I used button instead of Link
   <button className={glow ? "btn-glow" : "btn"} onClick={()=>{window.location.href=link}}>{text}</button>
-  console.log("used buttton");
+  
 ):(
 
-	console.log("used link");
-	console.log(import.meta.env.BASE_URL);
+	
 	
     <Link 
     to={link}
