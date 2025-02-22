@@ -511,6 +511,10 @@ span {
       font-family: cursive;
     }
     
+    footer .quote:hover{
+      text-shadow: 0 0 10px var(--white);
+    }
+    
     footer .link-container{
       padding: 10px;
       position: relative;
