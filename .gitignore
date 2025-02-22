@@ -7,6 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 
 dist
+start.sh
 
 # Environment variables
 .env
