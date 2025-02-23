@@ -1,9 +1,25 @@
-# React + Vite
-# edited
+<h1>🚀 Portfolio Website</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built using React.js.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h2>🌟 Live Demo</h2>
+
+🔗 <a href="https://my-portfolio-gamma-nine-79.vercel.app/">Click here to visit the site</a>
+
+
+<h2>📌 Features</h2>
+
+✅ Responsive design
+✅ Smooth scrolling navigation
+✅ Dynamic routing with react-router-dom
+✅ Deployed on Vercel
+
+
+🛠 Tech Stack
+
+Frontend: React.js, CSS
+
+Deployment: Vercel
+
+<hr>
