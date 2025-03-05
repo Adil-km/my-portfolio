@@ -10,7 +10,7 @@ export const FourthPage = () => {
 
     <div className="card-items" key={project.id}>
       <h3>{project.title}</h3>
-      <p>{project.discription}</p>
+      <p>{project.description}</p>
       <ul>{project.features.map((features,index) => (
     <li key={index}>{features}</li>
          ))}
