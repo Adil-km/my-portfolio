@@ -587,6 +587,6 @@ span {
         color: var(--white-faded-1);
         padding: 10px;
         max-width: 50rem;
-    
+        margin-bottom: 10px;
     }
     
