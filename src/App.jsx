@@ -5,7 +5,6 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
 
-
 function App() {
   const location = useLocation();
   
