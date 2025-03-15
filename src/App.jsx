@@ -1,6 +1,7 @@
 import { NavBar } from './components/NavBar.jsx';
 import { MainPage } from './components/MainPage.jsx';
 import { Contact } from './components/Contact.jsx';
+import { Err } from './components/ErrorPage.jsx';
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Analytics } from '@vercel/analytics/react';
 
@@ -17,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<Contact />} />
+        
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </>
   );
