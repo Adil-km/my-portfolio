@@ -593,7 +593,6 @@ span {
     /* success page */
     .success-container{
         min-height: 100vh;
-        background-color: #ebf4f6;
         display: flex;
         flex-direction: column;
         justify-content: center;
