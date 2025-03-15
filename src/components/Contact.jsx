@@ -1,7 +1,7 @@
 import { Button } from "./Button";
 import '../App.css';
 
-import {useState} from 'react';
+import {useState, useNavigate} from 'react';
 
 export const Contact= () =>{
   
@@ -18,6 +18,8 @@ export const Contact= () =>{
       });
     }
     
+    const navigate = useNavigate();
+    
     const formSubmit = (e) => {
       e.preventDefault();
       console.log(formData);
@@ -26,7 +28,8 @@ export const Contact= () =>{
         email : '',
         message : ''
       })
-      alert("Form submitted Successfully!");
+  
+      navigate('/');
     };
   
   
