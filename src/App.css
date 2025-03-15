@@ -590,3 +590,29 @@ span {
         margin-bottom: 10px;
     }
     
+    /* success page */
+    .success-container{
+        min-height: 100vh;
+        background-color: #ebf4f6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .success-main{
+        color: var(--white);
+        font-size: 2.3rem;
+        font-weight: 900;
+        margin-bottom:0px;
+    }
+
+    .success-message{
+        color: var(--white-faded-1);
+        padding: 10px;
+        max-width: 50rem;
+        margin-top:0;
+        margin-bottom:10px;
+    }
+    
+    
