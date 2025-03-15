@@ -21,9 +21,6 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<Contact />} />
         
-        <Route path="/success" element={<SuccessPage />} />
-        
-        
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </>
