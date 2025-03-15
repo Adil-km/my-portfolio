@@ -30,7 +30,7 @@ export const Contact= () =>{
         message : ''
       })
   
-     navigate('/contact');
+     navigate('/success');
     };
   
   
