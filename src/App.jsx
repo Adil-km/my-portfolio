@@ -13,13 +13,13 @@ function App() {
     <>
 	<Analytics />
       {/* Hide NavBar when on the Contact page */}
-      {location.pathname !== "/contact" && <NavBar />}
+      {location.pathname === "/" && <NavBar />}
       
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<Contact />} />
         
-        <Route path="/error" element={<ErrorPage/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </>
   );
