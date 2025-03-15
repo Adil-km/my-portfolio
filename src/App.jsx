@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<Contact />} />
         
-       
+        <Route path="/error" element={<ErrorPage/>}/>
       </Routes>
     </>
   );
