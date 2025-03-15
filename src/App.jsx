@@ -23,6 +23,7 @@ function App() {
         
         <Route path="/success" element={<SuccessPage />} />
         
+        
         <Route path="*" element={<ErrorPage/>}/>
       </Routes>
     </>
