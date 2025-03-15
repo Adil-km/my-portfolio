@@ -1,7 +1,8 @@
 import { Button } from "./Button";
 import '../App.css';
 
-import {useState, useNavigate} from 'react';
+import {useState} from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export const Contact= () =>{
   
@@ -29,7 +30,7 @@ export const Contact= () =>{
         message : ''
       })
   
-      navigate('/');
+     navigate('/');
     };
   
   
