@@ -567,6 +567,7 @@ span {
     
     footer .copyright a{
       text-decoration: none;
+      color: var(--white-faded-1);
     }
     
     /* error page*/
