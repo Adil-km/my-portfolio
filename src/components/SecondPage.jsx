@@ -1,4 +1,5 @@
 import {about} from './data.jsx';
+import React from 'react';
 import '../App.css';
 export const SecondPage = () =>{
 
