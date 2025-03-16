@@ -74,3 +74,11 @@ export const project = [
     level:'Intermediate'
   }
   ];
+  
+  
+  export const about =
+    {
+      title: "About me👋",
+      description:"Hi, I’m Adil, a BVoc Software Development student with a curious and creative mind. I love web development 💻 and enjoy exploring new technologies to build simple yet impactful solutions 🔍.<br>Beyond coding, I believe in growing, learning, and making a difference. I push myself to step out of my comfort zone 🚀, build self-confidence 💪, and create work that truly matters. I enjoy sharing knowledge 📚, supporting others 🤝, and contributing to a better world 🌍.<br>For me, technology is more than just code, it’s a way to solve problems, bring ideas to life, and make a positive impact ✨. Whether I’m drawing 🎨, brainstorming 💡, or building something new, I always follow what excites me, even if it’s unconventional.<br>Let’s connect, learn, and grow together! 🚀"
+    };
+    
