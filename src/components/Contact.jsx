@@ -22,7 +22,7 @@ export const Contact= () =>{
     const navigate = useNavigate();
     
     const formSubmit = (e) => {
-      if(formData.name!==""||formData.email!==""){
+      if(formData.name!==""&&formData.email!==""){
       e.preventDefault();
       console.log(formData);
       setFormData({
