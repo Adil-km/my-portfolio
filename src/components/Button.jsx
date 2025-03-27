@@ -8,7 +8,7 @@ export const Button = ({text, glow=true, link}) =>{
   return (
   <>
 
-  //if current page is in home
+  
   {(location.pathname === '/')?
   (
     
