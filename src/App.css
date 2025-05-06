@@ -420,9 +420,6 @@ span {
       form{
         min-width: 800px;
       }
-      .form-back-btn{
-        margin-left: 200px;
-      }
     }
 
     .formInput{
@@ -447,22 +444,38 @@ span {
       color:var(--white-faded-2);
     }
     .formInput:focus::placeholder {
-    color: var(--white);
+      color: var(--white);
     }
 
     .form-back-btn{
       display: flex;
       justify-content: start;
       width: 100%;
-
+      
     }
+  
     
     .formBtnDiv{
       display: flex;
       justify-content: end;
-      margin-top: 20px
+      margin-top: 20px;
     }
 
+    .formBtnDiv input{
+      min-width: 60px;
+      font-size: 1.1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    /* captcha verification box */
+
+    .recaptcha{
+      margin-top: 15px;
+
+    }
+
+
+    
     /* footer */
 
  
@@ -619,4 +632,6 @@ span {
         margin-bottom:10px;
     }
     
+
+
     
