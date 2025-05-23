@@ -12,14 +12,16 @@ export const Footer= ()=>{
 
                 <div className="footer-btn">    
                     <span className="quote">"Stay humble. Work hard. Be kind."</span>
+                    <span className="magnet">
                     <Button className="btn" text="Get in touch" link="/contact"/>
+                    </span>
                 </div>
 
                 <div className="link-container">
                     <span>Follow me on</span>
 
                     <ul className="links">
-                        <li>
+                        <li className="li">
                             <a href="https://www.linkedin.com/in/Adil-km">
 
                             <img src={icon1} className="icon-1" alt="linkedin icon"/>

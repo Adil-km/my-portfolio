@@ -1,5 +1,6 @@
 import {Button} from './Button.jsx';
 import '../App.css';
+import clsx from 'clsx';
 
 
 export const NavBar=()=>{
@@ -10,13 +11,13 @@ export const NavBar=()=>{
     <>
     <div className="NavBar">
       <div className="NavBar-content">
-          <img src={logoSrc} className="NavBar-logo" alt="logo" onClick={()=>{window.location.href="#home"}}/>
+          <img src={logoSrc} className={clsx('NavBar-logo', 'magnet')} alt="logo" onClick={()=>{window.location.href="#home"}}/>
            
           <div className="NavBar-items">
-              <Button className="btn" text="About" link="#about"/>
-              <Button className="btn" text="Skills" link="#skills"/>
-              <Button className="btn" text="Projects" link="#projects"/>
-              <Button className="btn" text="Contact" link="/contact"/>
+              <Button text="About" link="#about"/>
+              <Button text="Skills" link="#skills"/>
+              <Button text="Projects" link="#projects"/>
+              <Button text="Contact" link="/contact"/>
           </div>
       </div>
     </div>

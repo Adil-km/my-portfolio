@@ -1,22 +1,18 @@
 import {about} from './data.jsx';
 import React from 'react';
+import DOMPurify from 'dompurify';
 import '../App.css';
+
 export const SecondPage = () =>{
 
   return (
     <>
     <div className='page-second' id='about'>
       <div className="page-second-content">
-          <span>{about.title}</span>
+          <span className="about-title">{about.title}</span>
           
-          <p>{about.description.split("<br>").map((line,index)=>(
+          <span className='paragraph' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(about.description) }} />
           
-           <React.Fragment key={index}>
-            {line}<br/>
-            </React.Fragment>
-          )
-            
-          )}</p>
       </div>
       </div>
       <hr/>

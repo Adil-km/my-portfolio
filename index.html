@@ -11,6 +11,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
+    
+<div class="custom-cursor"></div>
+
+ <!-- <button class="magnet hover-target">Magnetic Button</button> 
+ <input class="cursor-hide" type="text" placeholder="Cursor hides here" /> -->
+
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
 
@@ -25,5 +31,91 @@
           });
       })();
     </script> 
+
+
+<!-- custom curser script -->
+<script>
+    if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) {
+  cursor.style.display = 'none';
+}
+
+    const cursor = document.querySelector('.custom-cursor');
+    let mouseX = 0, mouseY = 0;
+    let cursorX = 0, cursorY = 0;
+    const delay = 0.09;
+
+    document.addEventListener('mousemove', e => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      cursorX += (mouseX - cursorX) * delay;
+      cursorY += (mouseY - cursorY) * delay;
+
+      let offsetX = 0, offsetY = 0;
+      let isMagnetized = false;
+
+      // class="magnet"
+      document.querySelectorAll('.magnet').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const elCenterX = rect.left + rect.width / 2;
+        const elCenterY = rect.top + rect.height / 2;
+        const distX = mouseX - elCenterX;
+        const distY = mouseY - elCenterY;
+        const dist = Math.sqrt(distX ** 2 + distY ** 2);
+
+        if (dist < 100) {
+          isMagnetized = true;
+          const strength = 0.75; // tweak this
+          offsetX = -distX * strength;
+          offsetY = -distY * strength;     
+        }
+      });
+
+      cursor.style.left = `${cursorX}px`;
+      cursor.style.top = `${cursorY}px`;
+
+      if (isMagnetized) {
+        cursor.style.transform = `translate(calc(-50% + ${offsetX}px), calc(-50% + ${offsetY}px))`;
+      } else {
+        cursor.style.transform = `translate(-50%, -50%)`;
+      }
+
+      requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+
+    // Hover color change
+    const changeColorElement = ['hover-target'];
+    document.querySelectorAll(changeColorElement.map(cls => `.${cls}`).join(', ')).forEach(el => {
+      
+      el.addEventListener('mouseenter', () => cursor.classList.add('hovering'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hovering'));
+    });
+    
+    // Classes to check
+    const hideClasses = ['cursor-hide', 'hide'];
+
+    // Tag names AND selectors
+    const hideTags = ['IFRAME', 'TEXTAREA'];
+    const hideSelectors = ['input[type="text"]','input[type="email"]'];
+
+    document.addEventListener('mousemove', (e) => {
+      const target = e.target;
+
+      const matchesClass = hideClasses.some(cls => target.closest(`.${cls}`));
+      const matchesTag = hideTags.includes(target.tagName);
+      const matchesSelector = hideSelectors.some(sel => target.matches(sel));
+
+      const shouldHide = matchesClass || matchesTag || matchesSelector;
+
+      cursor.classList.toggle('hidden', shouldHide);
+    });
+
+  </script>
+
+    
   </body>
 </html>

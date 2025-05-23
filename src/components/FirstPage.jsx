@@ -12,7 +12,9 @@ export const FirstPage = () =>{
               <span>Hello, welcome</span>
               <span className="profile-name">I'm Adil</span>
               <span className="page-first-discription">student at farook college</span>
-              <Button className="btn" link="https://www.linkedin.com/in/adil-km" text="Let's connect"/>
+              <span className='magnet'>
+                <Button link="https://www.linkedin.com/in/adil-km" text="Let's connect"/>
+              </span>
           </div>
 
           <img src={profileSrc} className="page-first-img" alt="profile pic"/>
