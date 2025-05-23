@@ -219,6 +219,13 @@ body {
   background-position: center;
   background-size: contain;
   margin-top: 10px;
+  
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 /* to avoid clipping outside the screen */
@@ -234,6 +241,35 @@ body {
    font-size: 2.7em;
   }
 }
+
+@media(max-width:390px){
+  .NavBar-items{
+    align-self: center;
+  }
+  .NavBar-content{
+    overflow: hidden;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .NavBar-logo{
+    align-self: center;
+  }
+  .paragraph p{
+    font-size: 0.7em;
+  }
+
+}
+
+@media(max-height:600px){
+
+   .page-first {
+    height: 100%;
+   }
+   .page-second{
+    height: 100%;
+   }
+}
+
 
 .page-first-text {
   display: flex;
@@ -269,6 +305,12 @@ span {
 
 }
 
+@media(max-width:900px){
+  .page-second {
+    height: 100%;
+  }
+}
+
 .page-second-content {
   display: flex;
   flex-direction: column;
@@ -276,6 +318,7 @@ span {
   align-items: center;
   margin: 10px 0;
   width: 90%;
+  line-height: 1.5;
 }
 
 .page-second-content .about-title {
@@ -300,6 +343,9 @@ strong{
   transition: color 0.2s ease;
 }
 
+.paragraph p{
+  margin-bottom: 10px;
+}
 
 body:has(strong:hover) .paragraph  {
   color: var(--white-faded-1);
@@ -601,8 +647,13 @@ footer .copyright a{
   text-decoration: none;
   color: var(--white-faded-1);
   cursor: none;
+  transition: color 0.1s ease-out, text-shadow 0.1s ease-out;
 }
 
+footer .copyright a:hover{
+  color: var(--white-faded-2);
+  text-shadow: 0 0 10px var(--white-faded-2);
+}
 /* error page*/
 
 .error-container{

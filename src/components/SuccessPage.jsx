@@ -9,9 +9,7 @@ export const SuccessPage= () =>{
     <div className="success-container">
       <p className="success-main">Thank you!</p>
       <p className="success-message">Your message has been submitted successfully.</p>
-      <div className="magnet" style={{margin : '10px'}}>
       <Button link='/contact' text="Go back"/>
-      </div>
     </div>
     </>
     );

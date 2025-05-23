@@ -17,7 +17,13 @@ export const FirstPage = () =>{
               </span>
           </div>
 
-          <img src={profileSrc} className="page-first-img" alt="profile pic"/>
+          <img src={profileSrc} 
+          className="page-first-img" 
+          alt="profile pic"
+          onContextMenu={(e) => e.preventDefault()} 
+          draggable={false} 
+          onDragStart={(e) => e.preventDefault()} />
+
         </div>
       </div>
       <hr/>

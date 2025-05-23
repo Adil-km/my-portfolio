@@ -12,9 +12,7 @@ export const Footer= ()=>{
 
                 <div className="footer-btn">    
                     <span className="quote">"Stay humble. Work hard. Be kind."</span>
-                    <span className="magnet">
                     <Button className="btn" text="Get in touch" link="/contact"/>
-                    </span>
                 </div>
 
                 <div className="link-container">

@@ -22,9 +22,8 @@ export const FourthPage = () => {
         </div>
         
         <div>
-          <span className='magnet'>
+          
             <Button link={project.demo} text="view demo"/>
-          </span>
             <Button link={project.code} text="view code"/>
       
       </div>

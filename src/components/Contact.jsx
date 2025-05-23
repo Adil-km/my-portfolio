@@ -71,9 +71,7 @@ export const Contact = () => {
           />
 
           <div className="formBtnDiv">
-          <span className='magnet'>
             <input type="submit" className="btn-glow" value="send" />
-          </span>
           </div>
           
         </form>
