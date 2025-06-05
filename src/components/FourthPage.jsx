@@ -6,7 +6,7 @@ import '../App.css';
 
 export const FourthPage = () => {
 
-  const projectList = project.map(project =>
+  const projectList = project.slice().sort((a, b) => b.id - a.id).map(project =>
 
     <div className="card-items" key={project.id}>
       <h3>{project.title}</h3>

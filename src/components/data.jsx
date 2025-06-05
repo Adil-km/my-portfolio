@@ -1,12 +1,12 @@
 export const project = [
   {
   id:1,
-  title: 'To-Do List',
-  description: 'A simple to-do list application to add and delete tasks. Tasks are saved using local storage.',
-  features:['Task management','Local storage integration','Responsive UI'],
+  title: 'Image to PDF Converter',
+  description: 'Convert a single image to a PDF file using an API. A simple tool for quick image-to-PDF conversions.',
+  features:['PDF generation via API','Download the generated PDF','Easy-to-use interface'],
   tech:['HTML','CSS','JavaScript'],
-  demo:'https://to-do-list-demo.pages.dev/',
-  code:'https://github.com/Adil-km/to-do-list'
+  demo:'https://img-to-pdf.pages.dev/',
+  code:'https://github.com/Adil-km/img-to-pdf-converter'
   },
   
   {
@@ -21,13 +21,24 @@ export const project = [
   
   {
   id:3,
-  title: 'Image to PDF Converter',
-  description: 'Convert a single image to a PDF file using an API. A simple tool for quick image-to-PDF conversions.',
-  features:['PDF generation via API','Download the generated PDF','Easy-to-use interface'],
+  title: 'To-Do List',
+  description: 'A simple to-do list application to add and delete tasks. Tasks are saved using local storage.',
+  features:['Task management','Local storage integration','Responsive UI'],
   tech:['HTML','CSS','JavaScript'],
-  demo:'https://img-to-pdf.pages.dev/',
-  code:'https://github.com/Adil-km/img-to-pdf-converter'
+  demo:'https://to-do-list-demo.pages.dev/',
+  code:'https://github.com/Adil-km/to-do-list'
+  },
+
+  {
+  id:4,
+  title: 'To-Do List with Django',
+  description: 'A simple web-based To-Do app built with Django.',
+  features:['User authentication for personal task management','Filter by active or completed status','SQLite database for persistent storage'],
+  tech:['Python','HTML','CSS','JavaScript'],
+  demo:'https://adilkm.pythonanywhere.com/',
+  code:'https://github.com/Adil-km/to-do-list-django'
   }
+  
   ];
   
   
