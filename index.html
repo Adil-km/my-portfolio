@@ -42,7 +42,7 @@
     const cursor = document.querySelector('.custom-cursor');
     let mouseX = 0, mouseY = 0;
     let cursorX = 0, cursorY = 0;
-    const delay = 0.09;
+    const delay = 0.13; //smooth cursor point
 
     document.addEventListener('mousemove', e => {
       mouseX = e.clientX;
@@ -67,7 +67,7 @@
 
         if (dist < 100) {
           isMagnetized = true;
-          const strength = 0.75; // tweak this
+          const strength = 0.75; // magnet strength
           offsetX = -distX * strength;
           offsetY = -distY * strength;     
         }

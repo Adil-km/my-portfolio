@@ -271,6 +271,13 @@ body {
    }
 }
 
+@media(max-width:620px){
+  .page-second-content{
+    width: 100%;
+    background-color: red;
+  }
+}
+
 
 .page-first-text {
   display: flex;
@@ -318,7 +325,7 @@ span {
   justify-content: center;
   align-items: center;
   margin: 10px 0;
-  width: 90%;
+  width: 100%;
   line-height: 1.5;
 }
 
@@ -330,7 +337,7 @@ span {
 
 .page-second-content .paragraph {
   color: var(--white-secondary);
-  padding: 10px 20px;
+  padding: 10px 0;
   font-size: 1.2em;
   max-width: 80%;
   text-decoration: none;
