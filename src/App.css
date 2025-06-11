@@ -125,6 +125,9 @@ hr {
   padding: 20px;
   text-align: left;
   transition: border 0.1s ease-out, box-shadow 0.1s ease-out, transform 0.1s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
 }
 
@@ -227,6 +230,12 @@ body {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+
+  transition: transform 0.5s cubic-bezier( 0.37, 0.3, 0.23, 0.83 ) ;
+}
+
+.page-first-img:hover{
+  transform: scale(1.01) rotate(0.5deg);
 }
 
 /* to avoid clipping outside the screen */
@@ -299,6 +308,11 @@ span {
   color: var(--white);
   font-size: 3em;
   font-weight: bold;
+  transition: letter-spacing 0.5s cubic-bezier( 0.37, 0.3, 0.23, 0.83 );
+}
+
+.profile-name:hover{
+  letter-spacing: 0.03em;
 }
 
 /* second */
