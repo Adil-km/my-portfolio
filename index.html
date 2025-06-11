@@ -14,8 +14,9 @@
     
 <div class="custom-cursor"></div>
 
- <!-- <button class="magnet hover-target">Magnetic Button</button> 
- <input class="cursor-hide" type="text" placeholder="Cursor hides here" /> -->
+  <div class="scroll-progress">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
 
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
@@ -116,6 +117,14 @@
 
   </script>
 
+<!-- vertical scroll bar -->
+  <script>
+    window.addEventListener('scroll', () => {
+      const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (window.pageYOffset / totalHeight) * 100;
+      document.getElementById('progressBar').style.width = progress + '%';
+    });
+  </script>
     
   </body>
 </html>
