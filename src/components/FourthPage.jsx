@@ -9,7 +9,7 @@ export const FourthPage = () => {
   const projectList = project.slice().sort((a, b) => b.id - a.id).map(project =>
 
     
-    <div className="card-items" key={project.id}>
+    <div className="card-items scrollAppear" key={project.id}>
       <div>
 
         <h3>{project.title}</h3>

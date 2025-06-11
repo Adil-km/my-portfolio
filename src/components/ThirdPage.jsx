@@ -3,7 +3,7 @@ import "../App.css";
 
 export const ThirdPage = () =>{
   const skillList = skills.map(skill=>
-    <div className="card" key={skill.id}>
+    <div className="card scrollAppear" key={skill.id}>
         <h3>{skill.skill }</h3>
         <p>{skill.level}</p>
       </div>

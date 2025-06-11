@@ -11,7 +11,7 @@ export const SecondPage = () =>{
       <div className="page-second-content">
           <span className="about-title">{about.title}</span>
           
-          <span className='paragraph' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(about.description) }} />
+          <span className='paragraph ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(about.description) }} />
           
       </div>
       </div>
