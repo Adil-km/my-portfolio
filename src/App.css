@@ -807,8 +807,8 @@ html, body{
 .scroll-progress-bar {
   height: 100%;
   background: linear-gradient(90deg, 
-      rgba(255, 255, 255, 0.122) 0%,
-      rgba(255, 255, 255, 0.671) 100%
+      #ffffff1f 0%,
+      #ffffff99 100%
   );
   width: 0%;
   transition: width 0.1s ease-out;
