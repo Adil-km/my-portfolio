@@ -378,7 +378,7 @@ strong:hover {
 
 
 
-.page-third {
+.skill-section {
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -387,7 +387,7 @@ strong:hover {
   align-items: center;
 }
 
-.page-third-content {
+.skill-section-content {
 
   min-height: 100vh;
   width: 90%;
@@ -397,7 +397,7 @@ strong:hover {
   align-items: center;
 }
 
-.page-third-content span {
+.skill-section-content span {
   color: var(--white);
   font-weight: 700;
   text-decoration: underline;

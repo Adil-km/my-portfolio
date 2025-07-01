@@ -1,7 +1,7 @@
 import {skills} from './data.jsx';
 import "../App.css";
 
-export const ThirdPage = () =>{
+export const SkillSection = () =>{
   const skillList = skills.map(skill=>
     <div className="card scrollAppear" key={skill.id}>
         <h3>{skill.skill }</h3>
@@ -10,8 +10,8 @@ export const ThirdPage = () =>{
   );
     return (
         <>
-          <div className="page-third" id="skills">
-            <div className="page-third-content">
+          <div className="skill-section" id="skills">
+            <div className="skill-section-content">
             <span>My skills🎮</span>
               <div className="skill-container">
               {skillList}
