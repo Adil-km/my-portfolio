@@ -275,13 +275,13 @@ body {
    .hero-section {
     height: 100%;
    }
-   .page-second{
+   .about-section{
     height: 100%;
    }
 }
 
 @media(max-width:620px){
-  .page-second-content{
+  .about-section-content{
     width: 100%;
   }
 }
@@ -316,7 +316,7 @@ span {
 
 /* second */
 
-.page-second {
+.about-section {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -327,12 +327,12 @@ span {
 }
 
 @media(max-width:900px){
-  .page-second {
+  .about-section {
     height: 100%;
   }
 }
 
-.page-second-content {
+.about-section-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -342,13 +342,13 @@ span {
   line-height: 1.5;
 }
 
-.page-second-content .about-title {
+.about-section-content .about-title {
   color: var(--white);
   font-weight: 700;
   text-decoration: underline;
 }
 
-.page-second-content .paragraph {
+.about-section-content .paragraph {
   color: var(--white-secondary);
   padding: 10px 0;
   font-size: 1.2em;

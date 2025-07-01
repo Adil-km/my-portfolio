@@ -3,12 +3,12 @@ import React from 'react';
 import DOMPurify from 'dompurify';
 import '../App.css';
 
-export const SecondPage = () =>{
+export const AboutSection = () =>{
 
   return (
     <>
-    <div className='page-second' id='about'>
-      <div className="page-second-content">
+    <div className='about-section' id='about'>
+      <div className="about-section-content">
           <span className="about-title">{about.title}</span>
           
           <span className='paragraph ' dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(about.description) }} />

@@ -1,6 +1,6 @@
 import '../App.css';
 import { HeroSection } from './HeroSection.jsx';
-import { SecondPage } from './SecondPage.jsx'
+import { AboutSection } from './AboutSection.jsx'
 import { ThirdPage } from './ThirdPage.jsx';
 import { FourthPage } from './FourthPage.jsx';
 import {Footer} from './Footer.jsx';
@@ -11,7 +11,7 @@ export const MainPage = ()=>{
     <>
     <div className="main">
       <HeroSection/>
-      <SecondPage/>
+      <AboutSection/>
       <ThirdPage/>
       <FourthPage/>
       <Footer/>
