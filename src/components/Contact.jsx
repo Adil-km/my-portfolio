@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
 import { Button } from "./Button";
-import clsx from 'clsx';
+
 import '../App.css';
 
 export const Contact = () => {

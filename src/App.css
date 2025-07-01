@@ -197,8 +197,8 @@ body {
   color: var(--white);
 }
 
-/* first */
-.page-first {
+/* Hero section */
+.hero-section {
   display: flex;
   flex-direction: column;
   margin-top: 100px;
@@ -206,7 +206,7 @@ body {
 
 }
 
-.page-first-content {
+.hero-section-content {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -217,7 +217,7 @@ body {
 
 }
 
-.page-first-img {
+.hero-section-img {
   background-repeat: no-repeat;
   width: 480px;
   background-position: center;
@@ -234,17 +234,17 @@ body {
   transition: transform 0.5s cubic-bezier( 0.37, 0.3, 0.23, 0.83 ) ;
 }
 
-.page-first-img:hover{
+.hero-section-img:hover{
   transform: scale(1.01) rotate(0.5deg);
 }
 
 /* to avoid clipping outside the screen */
 @media(max-width:900px){
-  .page-first-img{
+  .hero-section-img{
     max-width: 90vw;
     margin-top: 70px;
   }
-  .page-first-text span{
+  .hero-section-text span{
    font-size: 1.7em;
   }
   .profile-name{
@@ -272,7 +272,7 @@ body {
 
 @media(max-height:600px){
 
-   .page-first {
+   .hero-section {
     height: 100%;
    }
    .page-second{
@@ -287,14 +287,14 @@ body {
 }
 
 
-.page-first-text {
+.hero-section-text {
   display: flex;
   flex-direction: column;
   align-items: start;
   margin-left: 20px;
 }
 
-.page-first-discription {
+.hero-section-discription {
   margin-bottom: 10px
 }
 

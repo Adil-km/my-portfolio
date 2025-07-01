@@ -3,7 +3,6 @@ import { Button } from './Button.jsx';
 import '../App.css';
 
 export const SuccessPage= () =>{
-  const profileSrc= '/profile.png';
   return (
     <>
     <div className="success-container">
