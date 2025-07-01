@@ -281,6 +281,9 @@ body {
 }
 
 @media(max-width:620px){
+  .hit-area, .button-wrapper{
+    display: none;
+  } 
   .about-section-content{
     width: 100%;
   }
@@ -813,4 +816,24 @@ html, body{
   width: 0%;
   transition: width 0.1s ease-out;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+
+/*  increase hit area of button */
+.button-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.hit-area {
+  position: absolute;
+  top: -70px;
+  left: -48px;
+  right: -48px;
+  bottom: -70px;
+  background: transparent;
+  z-index: 1;
+  border-radius: 80px;
+  cursor: none;
+  color: transparent;
 }

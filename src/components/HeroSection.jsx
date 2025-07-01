@@ -4,6 +4,7 @@ import '../App.css';
 
 export const HeroSection = () =>{
   const profileSrc= '/profile.png';
+  const myLinkedin = "https://www.linkedin.com/in/adil-km"
   return (
     <>
       <div className="hero-section"  id='home'>
@@ -12,8 +13,9 @@ export const HeroSection = () =>{
               <span>Hello, welcome</span>
               <span className="profile-name">I'm Adil</span>
               <span className="hero-section-discription">student at farook college</span>
-              <span className='magnet'>
-                <Button link="https://www.linkedin.com/in/adil-km" text="Let's connect"/>
+              <span className='magnet button-wrapper'>
+                <a className='hit-area' href={myLinkedin}></a>
+                <Button link={myLinkedin} text="Let's connect"/>
               </span>
           </div>
 
