@@ -4,7 +4,7 @@ import { Button } from './Button.jsx';
 
 import '../App.css';
 
-export const FourthPage = () => {
+export const ProjectSection = () => {
 
   const projectList = project.slice().sort((a, b) => b.id - a.id).map(project =>
 
@@ -36,8 +36,8 @@ export const FourthPage = () => {
 
   return (
     <>
-      <div className="page-fourth" id="projects">
-            <div className="page-fourth-content">
+      <div className="project-section" id="projects">
+            <div className="project-section-content">
             <span id="span">My projects🚀</span>
               
               <div className="card-container" >
