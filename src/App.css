@@ -99,13 +99,6 @@ html {
   text-shadow: 0 0 5px var(--white);
 }
 
-hr {
-  width: 95%;
-  margin: 30px;
-  border-color: var(--white-faded-1);
-}
-
-
 /*  project cards */
 
 .card-container {
@@ -781,7 +774,7 @@ html, body{
 @keyframes appear{
   from{
     opacity: 0;
-    transform: scale(0.7);
+    transform: scale(0.5);
   }
   to{
     opacity: 1;
@@ -793,7 +786,7 @@ html, body{
 .scrollAppear{
   animation: appear 2s linear;
   animation-timeline: view();
-  animation-range: entry 0% COVER 35%;
+  animation-range: entry 0% COVER 45%;
 }
 
 
@@ -836,4 +829,42 @@ html, body{
   border-radius: 80px;
   cursor: none;
   color: transparent;
+}
+
+/*  hr animation */
+.hr-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; 
+    position: relative;
+}
+
+/* Keyframes for the glimmer effect */
+@keyframes hrAnimation {
+  0%,100% {
+      background-position: right;
+  }
+  50% {
+      background-position: left;
+  }
+}
+
+hr {
+  border: none;
+  width: 95%;
+  height: 2px;
+  background: linear-gradient(
+      to right,
+      var(--black-fade) 0%,
+      var(--white-secondary) 25%,
+      var(--black-fade) 50%,
+      var(--white-secondary) 75%,
+      var(--black-fade) 100% 
+  );
+  background-size: 400%;
+  animation: hrAnimation 15s ease infinite;
 }
