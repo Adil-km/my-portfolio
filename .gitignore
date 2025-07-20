@@ -37,3 +37,4 @@ coverage/
 
 # React Native specific
 .expo/
+.vercel
