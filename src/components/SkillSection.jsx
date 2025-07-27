@@ -4,8 +4,9 @@ import "../App.css";
 export const SkillSection = () =>{
   const skillList = skills.map(skill=>
     <div className="card scrollAppear" key={skill.id}>
-        <h3>{skill.skill }</h3>
-        <p>{skill.level}</p>
+        {/* <h3>{skill.skill }</h3> */}
+        <img src={skill.imgUrl} alt={skill.skill} className='skill-logo' />
+        <p>{skill.skill}</p>
       </div>
   );
     return (

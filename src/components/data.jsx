@@ -46,42 +46,67 @@ export const project = [
   {
     id:1,
     skill:'HTML',
+    imgUrl:"/html_logo.png",
     level:'Proficient'
   },
   {
     id:2,
     skill:'CSS',
+    imgUrl:"/css_logo.png",
     level:'Proficient'
   },
-  
   {
     id:3,
     skill:'JavaScript',
+    imgUrl:"/javascript_logo.png",
     level:'Intermediate'
   },
   {
     id:4,
-    skill:'ReactJs',
-    level:'Beginner'
+    skill:'Python',
+    imgUrl:"/python_logo.png",
+    level:'Intermediate'
   },
   {
     id:5,
-    skill:'C',
-    level:'Intermediate'
-  },
-  {
-    id:6,
-    skill:'C++',
-    level:'Intermediate'
-  },
-  {
-    id:7,
-    skill:'JAVA',
+    skill:'ReactJs',
+    imgUrl:"/react_js_logo.png",
     level:'Beginner'
   },
   {
+    id:6,
+    skill:'Django',
+    imgUrl:"/django_logo.png",
+    level:'Beginner'
+  },
+  {
+    id:7,
+    skill:'C',
+    imgUrl:"/c_logo.png",
+    level:'Intermediate'
+  },
+  {
     id:8,
+    skill:'C++',
+    imgUrl:"/cpp_logo.png",
+    level:'Intermediate'
+  },
+  {
+    id:9,
+    skill:'C#',
+    imgUrl:"/c_sharp_logo.png",
+    level:'Beginner'
+  },
+  {
+    id:10,
+    skill:'JAVA',
+    imgUrl:"/java_logo.png",
+    level:'Beginner'
+  },
+  {
+    id:11,
     skill:'Git',
+    imgUrl:"/git_logo.png",
     level:'Intermediate'
   }
   ];
