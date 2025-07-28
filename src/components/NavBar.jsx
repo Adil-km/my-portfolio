@@ -10,7 +10,7 @@ export const NavBar=()=>{
     <>
     <div className="NavBar">
       <div className="NavBar-content">
-          <img src={logoSrc} className={'NavBar-logo'} alt="logo" onClick={()=>{window.location.href="#home"}}/>
+          <img src={logoSrc} className='NavBar-logo magnet' alt="logo" onClick={()=>{window.location.href="#home"}}/>
            
           <div className="NavBar-items">
               <Button text="About" link="#about"/>

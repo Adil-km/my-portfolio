@@ -18,7 +18,7 @@
   --black: #111111;
   --black-fade: #212529;
   --black-fade-alternative: #333333;
-
+  --light_blue: #6bcbff;
   /*--black-fade:#343A40;*/
   
   --navbar-black: #222526c2;
@@ -71,7 +71,6 @@ html {
 
 /* button */
 .btn {
-  cursor: none;
   text-decoration: none;
   margin-right: 10px;
   padding: 10px;
@@ -83,7 +82,6 @@ html {
 
 /*Glow effect on hover for buttons*/
 .btn-glow {
-  cursor: none;
   text-decoration: none;
   margin-right: 10px;
   padding: 10px;
@@ -659,7 +657,6 @@ footer .link-container .links{
 footer .link-container a{
   color: var(--white);
   text-decoration: none;
-  cursor: none;
 }
 
 footer .link-container img{
@@ -678,12 +675,11 @@ footer .copyright{
 footer .copyright a{
   text-decoration: none;
   color: var(--white-faded-1);
-  cursor: none;
   transition: color 0.1s ease-out, text-shadow 0.1s ease-out;
 }
 
 footer .copyright a:hover{
-  color: var(--white-faded-2);
+  color: var(--light_blue);
   text-shadow: 0 0 10px var(--white-faded-2);
 }
 /* error page*/
@@ -736,23 +732,18 @@ footer .copyright a:hover{
 }
     
 
-
 @media (hover: none) and (pointer: coarse) {
   .custom-cursor {
     display: none !important;
   }
 }
 
-html, body{
-  cursor: none;
-}
-
 .custom-cursor {
   position: fixed;
   top: 0;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   background-color: rgba(255, 255, 255, 0.553);
   border-radius: 50%;
   pointer-events: none;
@@ -842,7 +833,6 @@ html, body{
   background: transparent;
   z-index: 1;
   border-radius: 80px;
-  cursor: none;
   color: transparent;
 }
 

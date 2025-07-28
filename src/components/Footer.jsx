@@ -19,9 +19,8 @@ export const Footer= ()=>{
                     <span>Follow me on</span>
 
                     <ul className="links">
-                        <li className="li">
+                        <li>
                             <a href="https://www.linkedin.com/in/Adil-km">
-
                             <img src={icon1} className="icon-1" alt="linkedin icon"/>
                             LinkedIn
                             </a>
@@ -35,7 +34,6 @@ export const Footer= ()=>{
                         </li>
 
                         <li>
-                    
                             <a href="https://www.instagram.com/adil_km_/">
                             <img src={icon3} className="icon-2" alt="linkedin icon"/>
                             Instagram</a>
