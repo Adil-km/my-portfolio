@@ -51,7 +51,7 @@ export const project = [
     ],
     tech:['Python', 'Flask', 'HTML', 'CSS', 'SQLite'],
     demo:'https://flask-todo-app-bix3.onrender.com',
-    code:'https://github.com/your-username/flask-todo-app.git'
+    code:'https://github.com/adil-km/flask-todo-app'
   },
 
   {
