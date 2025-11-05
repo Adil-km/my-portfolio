@@ -12,10 +12,10 @@ export const HeroSection = () =>{
           <div className="hero-section-text">
               <span>Hello, welcome</span>
               <span className="profile-name">I'm Adil</span>
-              <span className="hero-section-discription">student at farook college</span>
+              <span className="hero-section-description">student at farook college</span>
               <span className='magnet button-wrapper'>
                 <a className='hit-area' href={myLinkedin}></a>
-                <Button link={myLinkedin} text="Let's connect"/>
+                <Button link={myLinkedin} text="Let's connect" target='_blank'/>
               </span>
           </div>
 

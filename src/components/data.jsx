@@ -1,44 +1,117 @@
 export const project = [
   {
-  id:1,
-  title: 'Image to PDF Converter',
-  description: 'Convert a single image to a PDF file using an API. A simple tool for quick image-to-PDF conversions.',
-  features:['PDF generation via API','Download the generated PDF','Easy-to-use interface'],
-  tech:['HTML','CSS','JavaScript'],
-  demo:'https://img-to-pdf.pages.dev/',
-  code:'https://github.com/Adil-km/img-to-pdf-converter'
+    id:1,
+    title: 'Image to PDF Converter',
+    description: 'Convert a single image to a PDF file using an API. A simple tool for quick image-to-PDF conversions.',
+    features:['PDF generation via API','Download the generated PDF','Easy-to-use interface'],
+    tech:['HTML','CSS','JavaScript'],
+    demo:'https://img-to-pdf.pages.dev',
+    code:'https://github.com/Adil-km/img-to-pdf-converter'
   },
   
   {
-  id:2,
-  title: 'QR Code Generator',
-  description: 'Generate QR codes for any text or URL using an API. The QR codes are downloadable for easy use.',
-  features:['Generate QR codes for any input text or URL','API integration','Downloadable QR codes for offline use'],
-  tech:['HTML','CSS','JavaScript'],
-  demo:'https://qr-code-demo.pages.dev/',
-  code:'https://github.com/Adil-km/qr-code-genrator'
+    id:2,
+    title: 'QR Code Generator',
+    description: 'Generate QR codes for any text or URL using an API. The QR codes are downloadable for easy use.',
+    features:['Generate QR codes for any input text or URL','API integration','Downloadable QR codes for offline use'],
+    tech:['HTML','CSS','JavaScript'],
+    demo:'https://qr-code-demo.pages.dev',
+    code:'https://github.com/Adil-km/qr-code-genrator'
   },
   
   {
-  id:3,
-  title: 'To-Do List',
-  description: 'A simple to-do list application to add and delete tasks. Tasks are saved using local storage.',
-  features:['Task management','Local storage integration','Responsive UI'],
-  tech:['HTML','CSS','JavaScript'],
-  demo:'https://to-do-list-demo.pages.dev/',
-  code:'https://github.com/Adil-km/to-do-list'
+    id:3,
+    title: 'To-Do List',
+    description: 'A simple to-do list application to add and delete tasks. Tasks are saved using local storage.',
+    features:['Task management','Local storage integration','Responsive UI'],
+    tech:['HTML','CSS','JavaScript'], 
+    demo:'https://to-do-list-demo.pages.dev',
+    code:'https://github.com/Adil-km/to-do-list'
   },
 
   {
-  id:4,
-  title: 'To-Do List with Django',
-  description: 'A simple web-based To-Do app built with Django.',
-  features:['User authentication for personal task management','Filter by active or completed status','SQLite database for persistent storage'],
-  tech:['Python','HTML','CSS','JavaScript'],
-  demo:'https://adilkm.pythonanywhere.com/',
-  code:'https://github.com/Adil-km/to-do-list-django'
+    id:4,
+    title: 'To-Do List with Django',
+    description: 'A simple web-based To-Do app built with Django.',
+    features:['User authentication for personal task management','Filter by active or completed status','SQLite database for persistent storage'],
+    tech:['Python','HTML','CSS','JavaScript'],
+    demo:'https://adilkm.pythonanywhere.com',
+    code:'https://github.com/Adil-km/to-do-list-django'
+  },
+
+  {
+    id: 5,
+    title: 'Flask TODO App',
+    description: 'A simple CRUD (Create, Read, Update, Delete) To-Do application built with the Flask web framework, utilizing SQLite for persistent storage.',
+    features:[
+      'CRUD functionality for tasks (Create, Read, Update, Delete)',
+      'SQLite database integration for storage',
+      'Minimal and clean interface',
+      'Foundation project for learning Flask'
+    ],
+    tech:['Python', 'Flask', 'HTML', 'CSS', 'SQLite'],
+    demo:'https://flask-todo-app-bix3.onrender.com',
+    code:'https://github.com/your-username/flask-todo-app.git'
+  },
+
+  {
+    id: 6,
+    title: 'PathWave',
+    description: 'A unique web application that converts an image of a pothole into a musical melody.',
+    features:[
+      'Convert pothole images into a playable melody',
+      'Location selection using Leaflet.js map',
+      'Audio preview of the generated music',
+      'Responsive image upload and preview interface'
+    ],
+    tech:['Python', 'Django', 'PostgreSQL', 'HTML', 'CSS', 'JavaScript', 'Leaflet.js'],
+    demo:'https://pathwave.onrender.com/',
+    code:'https://github.com/Adil-km/PathWave.git'
+  },
+  {
+    id: 7,
+    title: 'TCP Client–Server Simulation',
+    description: 'A fundamental implementation of a TCP client and server in C, allowing bidirectional data transfer over a network socket.',
+    features:[
+      'Establish a connection between client and server',
+      'Bidirectional data sending and receiving',
+      'Socket programming demonstration',
+      'Designed for Linux systems'
+    ],
+    tech:['C', 'Linux/POSIX Sockets', 'TCP/IP'],
+    code:'https://github.com/Adil-km/TCP-Client-Server-Implementation'
+  },
+
+  {
+    id: 8,
+    title: 'TicTacToe Game',
+    description: 'A sleek, modern, and responsive Tic-Tac-Toe game supporting Player vs Player and Player vs AI (Minimax algorithm) modes.',
+    features:[
+      'Player vs Player mode',
+      'Player vs AI mode',
+      'Responsive design for all devices',
+      'Game restart functionality'
+    ],
+    tech:['React.js', 'Tailwind CSS', 'JavaScript', 'Minimax Algorithm'],
+    demo:'https://tic-tac-toe-game-react-js-tailwind.vercel.app',
+    code:'https://github.com/Adil-km/TicTacToe-Game'
+  },
+  {
+
+    id: 9,
+    title: 'FlashNote',
+    description: 'An AI-powered tool that automatically converts study materials (PDF, image, or text) into structured, ready-to-import Anki flashcard CSV files.',
+    features:[
+      'AI-powered material to flashcard conversion',
+      'Supports multiple input methods: PDF, image, or raw text',
+      'Generates Anki-compatible CSV files',
+      'Significantly reduces manual flashcard creation time'
+    ],
+    tech:['Python', 'Django', 'PostgreSQL', 'HTML', 'CSS', 'JavaScript', 'Gemini API', 'OCR Space API'],
+    demo:'https://flashnote-8b6m.onrender.com',
+    code:'https://github.com/Adil-km/FlashNote'
+
   }
-  
   ];
   
   

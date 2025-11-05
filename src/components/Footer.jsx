@@ -20,7 +20,7 @@ export const Footer= ()=>{
 
                     <ul className="links">
                         <li>
-                            <a href="https://www.linkedin.com/in/Adil-km">
+                            <a href="https://www.linkedin.com/in/Adil-km" target='_blank'>
                             <img src={icon1} className="icon-1" alt="linkedin icon"/>
                             LinkedIn
                             </a>
@@ -28,13 +28,13 @@ export const Footer= ()=>{
                         </li>
 
                         <li>
-                            <a href="https://github.com/Adil-km/">
+                            <a href="https://github.com/Adil-km/" target='_blank'>
                             <img src={icon2} className="icon-2" alt="linkedin icon"/>
                             GitHub</a>
                         </li>
 
                         <li>
-                            <a href="https://www.instagram.com/adil_km_/">
+                            <a href="https://www.instagram.com/adil_km_/" target='_blank'>
                             <img src={icon3} className="icon-2" alt="linkedin icon"/>
                             Instagram</a>
                         </li>
@@ -44,7 +44,7 @@ export const Footer= ()=>{
             </div>
 
             <div className="copyright">
-                <p>Designed by <a href="mailto:adilkmparappur@gmail.com">Adil km</a></p>
+                <p>Designed by <a href="mailto:adilkmparappur@gmail.com" target="_blank">Adil km</a></p>
             </div>
                 
         </footer>

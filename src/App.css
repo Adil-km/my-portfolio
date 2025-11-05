@@ -18,7 +18,6 @@
   --black: #111111;
   --black-fade: #212529;
   --black-fade-alternative: #333333;
-  --light_blue: #6bcbff;
   /*--black-fade:#343A40;*/
   
   --navbar-black: #222526c2;
@@ -105,14 +104,13 @@ html {
   gap: 30px;
   flex-wrap: wrap;
   width: 90vw;
-
 }
 
 .card-items {
   background-color: var(--navbar-black);
   border: 1px solid var(--white-faded-1);
   border-radius: 5px;
-  width: 300px;
+  width: 350px;
   padding: 20px;
   text-align: left;
   transition: border 0.1s ease-out, box-shadow 0.1s ease-out, transform 0.1s ease-out;
@@ -288,7 +286,7 @@ body {
   margin-left: 20px;
 }
 
-.hero-section-discription {
+.hero-section-description {
   margin-bottom: 10px
 }
 
@@ -346,7 +344,7 @@ span {
   color: var(--white-secondary);
   padding: 10px 0;
   font-size: 1.2em;
-  max-width: 80%;
+  max-width: 60%;
   text-decoration: none;
   font-weight: 350;
   text-align: justify;
@@ -379,6 +377,7 @@ strong:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-block: 50px;
 }
 
 .skill-section-content {
@@ -399,7 +398,6 @@ strong:hover {
 }
 
 .project-section{
-
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -415,6 +413,7 @@ strong:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-block: 50px;
 }
 
 .project-section-content #span{
@@ -679,7 +678,7 @@ footer .copyright a{
 }
 
 footer .copyright a:hover{
-  color: var(--light_blue);
+  color: var(--white-secondary);
   text-shadow: 0 0 10px var(--white-faded-2);
 }
 /* error page*/

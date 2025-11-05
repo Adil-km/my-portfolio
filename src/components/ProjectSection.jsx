@@ -27,8 +27,9 @@ export const ProjectSection = () => {
       </div>
         
       <div>
-        <Button link={project.demo} text="view demo"/>
-        <Button link={project.code} text="view code"/>
+        {project.demo && <Button link={project.demo} text="View Demo" target='_blank'/>}
+        {project.code && <Button link={project.code} text="View Code" target='_blank'/>}
+
       </div>
     </div>
 
