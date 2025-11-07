@@ -10,7 +10,7 @@ export const Contact = () => {
   const SERVICE_ID = 'service_ey6de8j';
   const TEMPLATE_ID = 'template_pddexvl';
   const PUBLIC_KEY = 'plIlCCVIcBu9th20k';
-  const RECAPTCHA_SITE_KEY = '6Ldwti8rAAAAABYAyST0cyp_SDbC0x0iklc1H_Ix';
+  const RECAPTCHA_SITE_KEY = '6LdwnQUsAAAAAOar-VJ20PeU40X6R9uM6b5jKOKQ';
   
   const form = useRef();
   const recaptchaRef = useRef(null);
