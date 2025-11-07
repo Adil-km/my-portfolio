@@ -20,7 +20,7 @@ export const ProjectSection = () => {
         </ul>
         <div className="bubble-icons">
           {project.tech.map((tech, index) =>(
-            <span key={index}>{tech}</span>
+            <span className={tech === "Hackathon" ? "special" : " "} key={index}>{tech}</span>
             ))}
         </div>
 

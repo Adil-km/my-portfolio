@@ -44,7 +44,7 @@ export const Footer= ()=>{
             </div>
 
             <div className="copyright">
-                <p>Designed by <a href="mailto:adilkmparappur@gmail.com" target="_blank">Adil km</a></p>
+                <p>Made with <span className="heart">&#10084;</span> <a href="mailto:adilkmparappur@gmail.com" target="_blank">Adil</a></p>
             </div>
                 
         </footer>

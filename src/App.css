@@ -47,6 +47,7 @@ html {
   align-items: center;
   /*Nav bar blur*/
   backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .NavBar-logo {
@@ -117,6 +118,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  cursor: default;
 
 }
 
@@ -150,6 +152,9 @@ html {
   color: var(--white-faded-2);
 }
 
+.card-items button{
+  cursor: pointer;
+}
 
 .bubble-icons {
   display: flex;
@@ -160,12 +165,16 @@ html {
 
 .bubble-icons span {
   background-color: var(--black-fade-alternative);
-
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.85rem;
   color: var(--white-faded-2);
-  
+  transition: background-color 0.2s ease;
+}
+
+.bubble-icons .special{
+  background-color: var(--white-faded-1);
+  color: var(--white-secondary);
 }
 
 /*pages*/
@@ -178,12 +187,15 @@ body {
   top: 0px;
   min-height: 1000px;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   background-color: var(--black);
   color: var(--white);
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center; */
 }
 
 /* Hero section */
@@ -448,6 +460,7 @@ strong:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .card:hover {
@@ -557,7 +570,7 @@ form{
 .formBtnDiv input{
   min-width: 60px;
   font-size: 1.1rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 /* captcha verification box */
@@ -640,6 +653,7 @@ footer .link-container::before{
 }
 footer .link-container span{
   color: var(--white);
+  cursor: default;
 }
 
 footer ul{
@@ -668,7 +682,7 @@ footer .link-container img{
 footer .copyright{
   margin: 20px 0;
   color: var(--white-faded-1);
-  
+  cursor: default;
 }
 
 footer .copyright a{
@@ -681,6 +695,20 @@ footer .copyright a:hover{
   color: var(--white-secondary);
   text-shadow: 0 0 10px var(--white-faded-2);
 }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+footer .copyright .heart {
+  color: red;
+  margin-inline: 3px;
+  font-size: 1em;
+  display: inline-block;
+  animation: pulse 1s infinite ease-in-out;
+}
+
 /* error page*/
 
 .error-container{
@@ -748,7 +776,18 @@ footer .copyright a:hover{
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.2s;
+  transition: background-color 0.3s ease,
+              transform 0.2s ease,
+              opacity 0.2s,
+              width 0.3s ease,
+              height 0.3s ease;
+}
+
+body:has(.card-items:hover) .custom-cursor,
+body:has(.card:hover) .custom-cursor
+{
+  width: 40px;
+  height: 40px;
 }
 
 .hovering {

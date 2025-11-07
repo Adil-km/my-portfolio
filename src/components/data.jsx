@@ -64,7 +64,7 @@ export const project = [
       'Audio preview of the generated music',
       'Responsive image upload and preview interface'
     ],
-    tech:['Python', 'Django', 'PostgreSQL', 'HTML', 'CSS', 'JavaScript', 'Leaflet.js'],
+    tech:['Hackathon','Python', 'Django', 'PostgreSQL', 'HTML', 'CSS', 'JavaScript', 'Leaflet.js'],
     demo:'https://pathwave.onrender.com/',
     code:'https://github.com/Adil-km/PathWave.git'
   },
