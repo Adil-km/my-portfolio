@@ -16,6 +16,7 @@ export const NavBar=()=>{
               <Button text="About" link="#about"/>
               <Button text="Skills" link="#skills"/>
               <Button text="Projects" link="#projects"/>
+              <Button text="Blog" link="/blog"/>
               <Button text="Contact" link="/contact"/>
           </div>
       </div>

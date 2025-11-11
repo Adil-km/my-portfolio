@@ -911,3 +911,210 @@ hr {
   background-size: 400%;
   animation: hrAnimation 15s ease infinite;
 }
+
+/* --- Traditional Blog Section Styles --- */
+
+.blog-section {
+    /* Retains original flex properties for centering the entire section */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.blog-section-content {
+    /* Retains original flex properties */
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 50px;
+}
+
+.blog-title {
+    /* Retains original title style */
+    color: var(--white);
+    font-weight: 700;
+    text-decoration: underline;
+    margin-bottom: 40px; 
+    font-size: 2em; 
+}
+
+.blog-container.traditional-feed {
+    /* The main change: single column layout with constrained width, like a traditional blog */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* Space between articles */
+    width: 90vw;
+    max-width: 800px; /* Constrain the column width */
+    padding: 20px 0;
+}
+
+/* Individual Blog Post Article Styling */
+.blog-post-article {
+    /* Take the full width of the container */
+    width: 100%; 
+    background-color: var(--black-fade); /* Darker background for the post area */
+    border: 1px solid var(--black-fade-alternative);
+    border-radius: 8px; /* Slight roundness */
+    overflow: hidden; 
+    transition: border 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+
+.blog-post-link {
+    display: block; /* Make the entire article clickable */
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease-out;
+}
+
+.blog-post-article:hover {
+    border: 1px solid var(--white-faded-1);
+    box-shadow: 0 0 15px var(--navbar-black);
+    /* Subtle glow on hover, but no transform/lift, keeping it static/traditional */
+}
+
+
+.blog-post-img-full {
+    width: 100%;
+    /* Larger height for a prominent feature image */
+    height: 350px; 
+    object-fit: cover; 
+    transition: filter 0.3s ease-out;
+}
+
+.blog-post-link:hover .blog-post-img-full {
+    filter: brightness(0.85); /* Darken image slightly on hover */
+}
+
+.blog-post-text-content-full {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-post-main-title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: var(--white);
+    line-height: 1.2;
+    transition: color 0.1s ease-out;
+}
+
+.blog-post-link:hover .blog-post-main-title {
+    color: var(--white-secondary);
+    text-decoration: underline;
+}
+
+
+.blog-post-excerpt-full {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: var(--white-secondary);
+    line-height: 1.6;
+    /* Removed line clamp for a longer excerpt, traditional style */
+}
+
+.read-more-link {
+    /* Reusing .btn-glow styles for the link */
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: flex-start;
+    color: var(--white);
+    transition: text-shadow 0.1s ease-out;
+}
+
+.blog-post-link:hover .read-more-link {
+    text-shadow: 0 0 5px var(--white); /* Glow on hover */
+}
+
+
+
+/* --- Single Blog Post Page Styles --- */
+
+.single-post-section {
+    /* Full width, centered layout for the reading experience */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 20px 50px 20px; /* Top padding below sticky navbar */
+}
+
+.post-content-wrapper {
+    /* Constrain content width for optimal readability, similar to your paragraph width */
+    width: 100%;
+    max-width: 900px;
+}
+
+.post-metadata-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+
+/* Post Title */
+.post-page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 30px;
+}
+
+/* Featured Image */
+.post-featured-image {
+    margin: 30px 0 40px 0;
+    /* Allows the image to break out of the content width slightly if desired, 
+       but for now keeps it within the wrapper for simplicity. */
+    width: 100%; 
+}
+
+.post-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid var(--black-fade-alternative);
+}
+
+.image-caption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--white-faded-2);
+    text-align: center;
+}
+
+/* Main Text Content Styling */
+.post-text-content {
+    color: var(--white-secondary);
+    line-height: 1.7;
+    font-size: 1.15rem;
+    font-weight: 350; /* Matches your paragraph style */
+}
+
+.post-text-content p {
+    margin-bottom: 25px;
+}
+
+/* Media Query Adjustments for smaller screens */
+@media (max-width: 600px) {
+    .post-page-title {
+        font-size: 2.5rem;
+    }
+    .post-content-wrapper {
+        padding: 0 10px;
+    }
+    .post-text-content {
+        font-size: 1.05rem;
+    }
+}
