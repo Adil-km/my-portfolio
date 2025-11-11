@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import imgUrl from '/stock_image.jpg'
-import { Button } from "./Button";
+import { Button } from "../Button";
 
 export default function SingleBlog() {
   const [data, setData] = useState({});
@@ -15,8 +15,10 @@ export default function SingleBlog() {
         const response = await axios.get(`http://localhost:5001/${postId}`);
         setData(response.data);
       } catch (err) {
-        setData({ title: 'Error', description: 'Error fetching data' });
-        setError(err);
+        setError(err.response);
+        console.log(error);
+        
+        setData({ title: 'Error', body: 'Error fetching data: '});
       } finally {
         setLoading(false);
       }

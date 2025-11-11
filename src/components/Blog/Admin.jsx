@@ -1,29 +1,29 @@
-import { useEffect, useState } from 'react';
-import { Button } from "./Button";
+import { useState } from 'react';
+import { Button } from "../Button";
 import { useNavigate } from 'react-router-dom';
-import '../App.css';
+import '../../App.css';
 
-// 🔑 Import the pre-configured instance
-import api from './axiosConfig'; 
+import api from '../axiosConfig'; 
+import { NavBar } from '../NavBar';
 
 export default function Admin () {
     const navigate = useNavigate();
     const [username, setUserName] = useState("");
     const [password, setPassword] = useState("");
     
-    // Use the path only, as the base URL is in axiosConfig
     const url = "/admin/auth" 
 
     const authFetch = async()=>{
       try {
-        // Axios automatically uses the configured base URL (http://localhost:5001)
+        
         const response = await api.post(url, {username:username, password:password})
         console.log(response.data);
         navigate('/admin/posts')
         
       } catch (error) {
-        // Log the error response fully for debugging
+        
         console.log("Login Error: ", error.response);
+        navigate('/admin/auth'); 
       }
     }
 
@@ -34,6 +34,7 @@ export default function Admin () {
 
   return (
     <>
+    <NavBar blogPage={true}/>
       <div className="form-container">
         <div className="form-back-btn">
           <Button className="btn" text="Go back" link="/" />

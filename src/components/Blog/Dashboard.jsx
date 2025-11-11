@@ -1,49 +1,83 @@
-import { useEffect, useState } from 'react';
-// 🔑 Import the pre-configured instance
+import { useEffect, useState, useCallback } from 'react';
 import api from '../axiosConfig'; 
 import { Button } from "../Button";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { NavBar } from '../NavBar';
 
 export default function Dashboard() {
+  const navigate = useNavigate();
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Use the path only
+  const [deletingPostId, setDeletingPostId] = useState(null); 
+
   const url = '/admin/posts'
   
-  useEffect(() => {
-    const fetchData = async ()=>{
-      try {
-        // Axios automatically sends the cookie here!
-        const response = await api.get(url)
-        setData(response.data)
-        setError(null)
-      } catch (error) {
-        // The 401 response should now be correctly caught here
-        console.log("Authentication Failed: ", error.response);
-        setError("You must be logged in to view this page.")
-        // You might want to redirect to /admin here if the error is 401
-      }finally{
-        setLoading(false)
-      }
+  const fetchData = useCallback(async ()=>{
+    setLoading(true);
+    try {
+      const response = await api.get(url)
+      setData(response.data)
+      setError(null)
+    } catch (error) {
+      console.log("Authentication Failed: ", error.response);
+      navigate('/admin/auth'); 
+      setError("You must be logged in to view this page.")
+    }finally{
+      setLoading(false)
     }
-  
+  }, [url, navigate])
+
+  useEffect(() => {
     fetchData()
-  }, [])
+  }, [fetchData]) 
   
   
+  const deletePost = async (postId)=>{
+    if (!window.confirm("Are you sure you want to permanently delete this post?")) {
+        return;
+    }
+    
+    setDeletingPostId(postId);
+
+    try {
+      const url = `/admin/delete/${postId}`;
+      await api.delete(url);
+
+      console.log(`Post ${postId} deleted successfully.`);
+      setError(null);
+      
+      fetchData(); 
+
+    } catch (error) {
+      console.error("Deletion Failed: ", error.response);
+      setError("Failed to delete post. Please check permissions.");
+      
+    } finally {
+        setDeletingPostId(null); 
+    }
+  }
+
+
   
   if (loading){
     return <h1 style={{ color: "white", textAlign: "center", marginTop: "50px" }}>Loading....</h1>;
   }
-  if (error){
+  if (error && !data){
     return <h1 style={{ color: "red", textAlign: "center", marginTop: "50px" }}>Error: {error}</h1>;
   }
 
-  const blogPosts = data.data; // Assumes your server response is { data: [posts] }
-  if (!blogPosts || !Array.isArray(blogPosts) || blogPosts.length === 0) {
-    return <h1 style={{ color: "yellow", textAlign: "center", marginTop: "50px" }}>No blog posts found.</h1>;
+  const blogPosts = data && data.data ? data.data : [];
+  if (blogPosts.length === 0) {
+    return (
+        <div className="main">
+            <NavBar blogPage={true}>
+                <Button className="btn" text="Add New Post" link="/admin/add" />
+            </NavBar>
+            <h1 style={{ color: "yellow", textAlign: "center", marginTop: "50px" }}>No blog posts found.</h1>
+        </div>
+    );
   }
   
   
@@ -68,26 +102,38 @@ export default function Dashboard() {
           {blog.body}
         </p>
 
-        <Link to={`/blog/${blog._id}`}> 
-          <p className="read-more-link btn-glow">Continue Reading &rarr;</p>
-        </Link>
-        <Link to={`/edit/${blog._id}`}> 
-          <p className="read-more-link btn-glow">Edit Post &rarr;</p>
-        </Link>
-        <Link to={`/delete/${blog._id}`}> 
-          <p className="read-more-link btn-glow">Delete Post &rarr;</p>
-        </Link>
+        <div style={{ marginTop: '10px' }}>
+            <Link to={`/blog/${blog._id}`}> 
+              <p className="read-more-link btn-glow">Continue Reading &rarr;</p>
+            </Link>
+            
+            <Link to={`/admin/edit/${blog._id}`}> 
+              <p className="read-more-link btn-glow">Edit Post &rarr;</p>
+            </Link>
+            
+            <button 
+                onClick={() => deletePost(blog._id)} 
+
+                className="read-more-link btn-glow"
+                disabled={deletingPostId === blog._id} 
+            >
+                {deletingPostId === blog._id ? "Deleting..." : "Delete Post"}
+            </button>
+        </div>
       </div>
     </article>
   ));
 
   return (
+    
     <div className="main">
-      <Button className="btn" text="Go back" link="/" />
-      
+      <NavBar blogPage={true}>
+        <Button className="btn" text="Add New Post" link="/admin/add" />
+      </NavBar>
+  
       <section className="blog-section">
         <div className="blog-section-content">
-          <span className="blog-title" id="span">📝 Latest Articles</span>
+          <span className="blog-title" id="span">📝 Admin Dashboard - Latest Articles</span>
           <div className="blog-container traditional-feed">
 
             {blogElements} 

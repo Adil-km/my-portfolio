@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { Link } from 'react-router-dom';
 
 export default function Blog() {
@@ -15,6 +15,8 @@ export default function Blog() {
         setData(response.data);
       } catch (err) {
         setError("Could not fetch blog data.");
+        console.log(err.response);
+        
       } finally {
         setLoading(false);
       }
