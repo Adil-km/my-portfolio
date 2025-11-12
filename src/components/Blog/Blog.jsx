@@ -40,28 +40,38 @@ export default function Blog() {
   
   const blogElements = blogPosts.map((blog, index) => (
     
-    <article className="blog-post-article" key={blog._id || index}> 
-      <img src={blog.img} alt="A relevant image for the blog post" className="blog-post-img-full" />
+    <article className="blog-post-article" key={blog._id || index}>
+      {blog?.coverImg &&
+        <img src={blog?.coverImg} alt="A relevant image for the blog post" className="blog-post-img-full" />
+      }
       
       <div className="blog-post-text-content-full">
-        <h2 className="blog-post-main-title">{blog.title}</h2>
-        
-        <div className="blog-post-dates metadata">
-          <p className="published">
-            Published: {blog.createdAt.split('T')[0]}
-          </p>
-          <p className="updated">
-            Updated: {blog.updatedAt.split('T')[0]}
-          </p>
-        </div>
+        <h2 className="blog-post-main-title">{blog?.title}</h2>
         
         <p className="blog-post-excerpt-full">
-          {blog.body}
+          {blog?.body}
         </p>
 
-        <Link to={`/blog/${blog._id}`}> 
+      <div className="blog-post-footer">
+
+        <div className="blog-post-dates">
+          <p className="date-info published">
+            Published: {blog?.createdAt?.split('T')[0]}
+          </p>
+
+          {blog?.createdAt !== blog?.updatedAt && (
+            <p className="date-info updated">
+              Updated: {blog?.updatedAt?.split('T')[0]}
+            </p>
+          )}
+          
+        </div>
+
+        <Link to={`/blog/${blog?._id}`}> 
           <p className="read-more-link btn-glow">Continue Reading &rarr;</p>
         </Link>
+      </div>
+
       </div>
     </article>
   ));
@@ -72,7 +82,7 @@ export default function Blog() {
       
       <section className="blog-section">
         <div className="blog-section-content">
-          <span className="blog-title" id="span">📝 Latest Articles</span>
+          <span className="blog-title" id="span">📝 Blogs</span>
           <div className="blog-container traditional-feed">
 
             {blogElements} 

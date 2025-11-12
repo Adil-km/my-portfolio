@@ -1,17 +1,18 @@
 import { useEffect, useState } from 'react';
 import { Button } from "../Button"
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import '../../App.css';
 import api from '../axiosConfig';
 
 export default function EditBlog () {
   const navigate = useNavigate();
-
+  const { postId } =  useParams()
 
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   const [title, setTitle] = useState("");
+  const [coverImg, setCoverImg] = useState("");
   const [body, setBody] = useState("");
   
   const url = "/admin/edit"
@@ -19,10 +20,9 @@ export default function EditBlog () {
     const fetchData = async ()=>{
       setLoading(true);
       try {
-        const postId = window.location.href.split('edit/')[1];
         const response = await api.get(`${url}/${postId}`);
-        // const response = await api.get(url)
         setTitle(response.data.title)
+        setCoverImg(response.data.coverImg)
         setBody(response.data.body)
         setError(null)
       } catch (error) {
@@ -42,9 +42,7 @@ export default function EditBlog () {
 
   const editPost = async()=>{
       try {
-        const url = '/admin/edit'
-        const postId = window.location.href.split('edit/')[1];
-        const response = await api.post(`${url}/${postId}`, {title:title, body:body})
+        const response = await api.post(`${url}/${postId}`, {title:title, body:body, coverImg:coverImg})
         console.log(response);
         navigate('/admin/posts')
         
@@ -78,10 +76,11 @@ export default function EditBlog () {
 
         <form onSubmit={handleSubmit}>
             <input type="text" name="title" className="formInput" placeholder="Enter the title for the blog post" required value={title} onChange={(e)=>setTitle(e.target.value)} />
+            <input type="text" name="title" className="formInput" placeholder="Enter the url for the cover image" required value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
             <textarea rows={4} name="body" className="formInput" placeholder="Enter your blog content" required value={body} onChange={(e)=>setBody(e.target.value)} />
 
           <div className="formBtnDiv">
-            <input type="submit" className="btn-glow" value="Post blog" />
+            <input type="submit" className="btn-glow" value="Update Blog" />
           </div>
         </form>
       </div>

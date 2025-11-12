@@ -83,43 +83,48 @@ export default function Dashboard() {
   
   const blogElements = blogPosts.map((blog, index) => (
     
-    <article className="blog-post-article" key={blog._id || index}> 
-      <img src={blog.img} alt="A relevant image for the blog post" className="blog-post-img-full" />
-      
+    <article className="blog-post-article" key={blog?._id || index}> 
+    {blog?.coverImg &&
+      <img src={blog?.coverImg} alt="A relevant image for the blog post" className="blog-post-img-full" /> 
+    }
       <div className="blog-post-text-content-full">
-        <h2 className="blog-post-main-title">{blog.title}</h2>
+        <h2 className="blog-post-main-title">{blog?.title}</h2>
         
-        <div className="blog-post-dates metadata">
-          <p className="published">
-            Published: {blog.createdAt.split('T')[0]}
-          </p>
-          <p className="updated">
-            Updated: {blog.updatedAt.split('T')[0]}
-          </p>
-        </div>
         
         <p className="blog-post-excerpt-full">
-          {blog.body}
+          {blog?.body}
         </p>
 
-        <div style={{ marginTop: '10px' }}>
-            <Link to={`/blog/${blog._id}`}> 
-              <p className="read-more-link btn-glow">Continue Reading &rarr;</p>
-            </Link>
-            
-            <Link to={`/admin/edit/${blog._id}`}> 
-              <p className="read-more-link btn-glow">Edit Post &rarr;</p>
-            </Link>
-            
-            <button 
-                onClick={() => deletePost(blog._id)} 
+        <div className="blog-post-footer">
 
-                className="read-more-link btn-glow"
-                disabled={deletingPostId === blog._id} 
-            >
-                {deletingPostId === blog._id ? "Deleting..." : "Delete Post"}
-            </button>
+          <div className="blog-post-dates">
+            <p className="date-info published">
+              Published: {blog?.createdAt?.split('T')[0]}
+            </p>
+
+            {blog?.createdAt !== blog?.updatedAt && (
+              <p className="date-info updated">
+                Updated: {blog?.updatedAt?.split('T')[0]}
+              </p>
+            )}
+          </div>
+
+          <div style={{ display: 'flex'}} >
+              <Link style={{textDecoration: 'none'}} to={`/blog/${blog?._id}`}> 
+                <p className="btn-glow">Continue Reading &rarr;</p>
+              </Link>
+              
+              <Link style={{textDecoration: 'none'}} to={`/admin/edit/${blog?._id}`}> 
+                <p className="btn-glow">Edit Post &rarr;</p>
+              </Link>
+
+              {deletingPostId !== blog?._id &&
+                <Button text={deletingPostId === blog?._id ? "Deleting..." : "Delete Post"} onClick={() => deletePost(blog?._id)}/>
+              }
+
+          </div>
         </div>
+
       </div>
     </article>
   ));

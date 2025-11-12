@@ -3,15 +3,17 @@ import axios from 'axios';
 import imgUrl from '/stock_image.jpg'
 import { Button } from "../Button";
 
+import parse from 'html-react-parser';
+import { useParams } from 'react-router-dom';
+
 export default function SingleBlog() {
   const [data, setData] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+  const { postId } =  useParams()
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const postId = window.location.href.split('/')[4];
         const response = await axios.get(`http://localhost:5001/${postId}`);
         setData(response.data);
       } catch (err) {
@@ -40,12 +42,15 @@ export default function SingleBlog() {
                 
                 <div className="blog-post-dates">
                     <p className="date-info published">
-                        Published: {data.createdAt.split('T')[0]}
+                      Published: {data?.createdAt?.split('T')[0]}
                     </p>
-                    
-                    <p className="date-info updated">
-                        Updated: {data.updatedAt.split('T')[0]}
-                    </p> 
+
+                    {data?.createdAt !== data?.updatedAt && (
+                      <p className="date-info updated">
+                        Updated: {data?.updatedAt?.split('T')[0]}
+                      </p>
+                    )}
+  
                 </div>
             </div>
 
@@ -55,18 +60,23 @@ export default function SingleBlog() {
                     {data.title}
                 </h1>
 
-                <figure className="post-featured-image">
-                    <img src={imgUrl} alt="A detailed image related to AI and code generation" className="post-image"/>
-                    <figcaption className="image-caption">
-                        Image showcasing AI integration in modern web development tools.
-                    </figcaption>
-                </figure>
+                  {data?.coverImg &&
+                    <figure className="post-featured-image">
+                        <img src={data?.coverImg} alt="A detailed image related to AI and code generation" className="post-image"/>
+                        <figcaption className="image-caption">
+                            Image showcasing AI integration in modern web development tools.
+                        </figcaption>
+                    </figure>
+                  }
                 
                 <div className="post-text-content">
     
-                    <p>
-                        {data.body}
-                        </p>
+                        
+                        {data.body &&
+                          data.body.split('<br>').map((para, index) => (
+                            <div key={index}>{parse(para)}</div>
+                          ))}
+     
 
 
                 </div>

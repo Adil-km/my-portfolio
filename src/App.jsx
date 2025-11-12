@@ -32,11 +32,11 @@ function App() {
         
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:slug" element={<SingleBlog />} />
+        <Route path="/blog/:postId" element={<SingleBlog />} />
         
         <Route path="/admin/auth" element={<Admin />} />
         <Route path="/admin/add" element={<AddBlog />} />
-        <Route path="/admin/edit/:slug" element={<EditBlog/>} />
+        <Route path="/admin/edit/:postId" element={<EditBlog/>} />
         <Route path="/admin/posts" element={<Dashboard />} />
         
         <Route path="*" element={<ErrorPage/>}/>

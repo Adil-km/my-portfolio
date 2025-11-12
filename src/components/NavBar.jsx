@@ -6,6 +6,7 @@ import api from './axiosConfig.js';
 export const NavBar=({children, blogPage = false})=>{
   const navigate = useNavigate()
   const logoSrc = "/logo.svg";
+  
   const handleLogout = async () => {
       try {
           await api.get('/admin/logout'); 

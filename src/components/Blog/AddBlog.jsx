@@ -10,6 +10,7 @@ export default function AddBlog () {
   const url = "/admin/add"
   const navigate = useNavigate();
     const [title, setTitle] = useState("");
+    const [coverImg, setCoverImg] = useState("");
     const [body, setBody] = useState("");
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [loading, setLoading] = useState(true);
@@ -31,7 +32,7 @@ export default function AddBlog () {
     const authFetch = async()=>{
       setIsSubmitting(true);
       try {
-        const response = await api.post(url, {title:title, body:body})
+        const response = await api.post(url, {title:title, body:body, coverImg:coverImg})
         console.log(response);
         navigate('/admin/posts')
         
@@ -61,6 +62,7 @@ export default function AddBlog () {
 
         <form onSubmit={handleSubmit}>
             <input type="text" name="title" className="formInput" placeholder="Enter the title for the blog post" required value={title} onChange={(e)=>setTitle(e.target.value)} />
+            <input type="text" name="title" className="formInput" placeholder="Enter the url for the cover image" required value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
             <textarea rows={4} name="body" className="formInput" placeholder="Enter your blog content" required value={body} onChange={(e)=>setBody(e.target.value)} />
 
           <div className="formBtnDiv">
