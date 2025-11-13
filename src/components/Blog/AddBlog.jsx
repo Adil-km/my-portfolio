@@ -150,6 +150,7 @@ const keyDown = (event) => {
         <h1>Add post</h1>
 
           <div className="toolBar">
+            <Button text="Paragraph" onMouseDown={(e) => { e.preventDefault(); addTag('p'); }} />
             <Button text="Bold" onMouseDown={(e) => { e.preventDefault(); addTag('strong'); }} />
             <Button text="Italic" onMouseDown={(e) => { e.preventDefault(); addTag('em'); }} />
             <Button text="H1" onMouseDown={(e) => { e.preventDefault(); addTag('h1'); }} />
@@ -159,10 +160,7 @@ const keyDown = (event) => {
         <form onSubmit={handleSubmit}>
           <input type="text" name="title" className="formInput" placeholder="Enter the title for the blog post" required value={title} onChange={(e)=>setTitle(e.target.value)} />
           <input type="text" name="title" className="formInput" placeholder="Enter the url for the cover image" required value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
-          <br/>
-          <br/>
-          <br/>
-          
+
           <textarea 
             ref={textareaRef} 
             onKeyDown={keyDown} 

@@ -34,7 +34,7 @@ export default function Admin () {
 
   return (
     <>
-    <NavBar blogPage={true}/>
+    <NavBar isAdmin={true}/>
       <div className="form-container">
         <div className="form-back-btn">
           <Button className="btn" text="Go back" link="/" />

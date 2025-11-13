@@ -1,7 +1,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import api from '../axiosConfig'; 
 import { Button } from "../Button";
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { NavBar } from '../NavBar';
 
 export default function Dashboard() {
@@ -108,16 +108,10 @@ export default function Dashboard() {
               </p>
             )}
           </div>
-
           <div style={{ display: 'flex'}} >
-              <Link style={{textDecoration: 'none'}} to={`/blog/${blog?._id}`}> 
-                <p className="btn-glow">Continue Reading &rarr;</p>
-              </Link>
-              
-              <Link style={{textDecoration: 'none'}} to={`/admin/edit/${blog?._id}`}> 
-                <p className="btn-glow">Edit Post &rarr;</p>
-              </Link>
 
+          <Button link={`/blog/${blog?._id}`} text="Continue Reading &rarr;"/>
+          <Button link={`/admin/edit/${blog?._id}`} text="Edit Post"/>
               {deletingPostId !== blog?._id &&
                 <Button text={deletingPostId === blog?._id ? "Deleting..." : "Delete Post"} onClick={() => deletePost(blog?._id)}/>
               }
@@ -132,7 +126,7 @@ export default function Dashboard() {
   return (
     
     <div className="main">
-      <NavBar blogPage={true}>
+      <NavBar>
         <Button className="btn" text="Add New Post" link="/admin/add" />
       </NavBar>
   

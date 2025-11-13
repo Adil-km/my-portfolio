@@ -6,6 +6,7 @@ import parse from 'html-react-parser';
 import { useParams } from 'react-router-dom';
 
 import Giscus from '@giscus/react';
+import { NavBar } from '../NavBar';
 
 export default function SingleBlog() {
   const [data, setData] = useState({});
@@ -33,6 +34,7 @@ export default function SingleBlog() {
   if (loading) return <h1 style={{color: "white", textAlign: "center",  marginTop:"50px" }}>Loading....</h1>;
   return (
     <>
+    <NavBar/>
     <div className="main">
     
     <section className="single-post-section">

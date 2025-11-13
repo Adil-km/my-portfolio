@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Button } from "../Button";
-import { Link } from 'react-router-dom';
+import {NavBar} from "../NavBar" 
 
 export default function Blog() {
   const [data, setData] = useState(null);
@@ -66,10 +66,7 @@ export default function Blog() {
           )}
           
         </div>
-
-        <Link to={`/blog/${blog?._id}`}> 
-          <p className="read-more-link btn-glow">Continue Reading &rarr;</p>
-        </Link>
+          <Button link={`/blog/${blog?._id}`} text="Continue Reading &rarr;"/>
       </div>
 
       </div>
@@ -78,8 +75,7 @@ export default function Blog() {
 
   return (
     <div className="main">
-      <Button className="btn" text="Go back" link="/" />
-      
+      <NavBar/>
       <section className="blog-section">
         <div className="blog-section-content">
           <span className="blog-title" id="span">📝 Blogs</span>
