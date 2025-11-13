@@ -15,7 +15,7 @@ export const HeroSection = () =>{
               <span className="hero-section-description">Software Developer</span>
               <span className='magnet button-wrapper'>
                 <a className='hit-area' href={myLinkedin}></a>
-                <Button link={myLinkedin} text="Let's connect" target='_blank'/>
+                <Button link={myLinkedin} text="Let's connect" target='_blank' />
               </span>
           </div>
 

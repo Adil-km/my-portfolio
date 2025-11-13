@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Button } from "../Button";
 import {NavBar} from "../NavBar" 
+import Loading from '../Loading';
 
 export default function Blog() {
   const [data, setData] = useState(null);
@@ -25,11 +26,16 @@ export default function Blog() {
   }, []);
   
   
-  if (loading){
-    return <h1 style={{ color: "white", textAlign: "center", marginTop: "50px" }}>Loading....</h1>;
+  if(loading){
+    return <Loading/>
   }
   if (error){
-    return <h1 style={{ color: "red", textAlign: "center", marginTop: "50px" }}>Error: {error}</h1>;
+    return <>
+    <div className="error-container">
+      <p className="error-main">Error : {error}</p>
+      <Button link='/' text="Go home"/>
+    </div>
+    </>;
   }
 
   const blogPosts = data;

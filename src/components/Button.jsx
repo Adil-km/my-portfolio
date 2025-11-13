@@ -13,6 +13,7 @@ export const Button = ({text, glow=true, link=null, onMouseDown=null, onClick=nu
         onClick={onClick}
         onMouseDown={onMouseDown}
         disabled={link !== null && link !== ""}
+        target ={target}
       >
         {text}
       </button>
@@ -37,13 +38,15 @@ export const Button = ({text, glow=true, link=null, onMouseDown=null, onClick=nu
       <Link 
         to={link}
         className={classes} 
-        target={target}>
+        target={target}
+        >
+        
         {text}
       </Link>
     );
   }
 
   return (
-    <button className={classes} onMouseDown={onMouseDown} >{text}</button>
+    <button className={classes} onMouseDown={onMouseDown} target ={target}>{text}</button>
   );
 }

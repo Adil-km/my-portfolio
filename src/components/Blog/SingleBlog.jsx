@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 
 import Giscus from '@giscus/react';
 import { NavBar } from '../NavBar';
+import Loading from '../Loading';
 
 export default function SingleBlog() {
   const [data, setData] = useState({});
@@ -20,7 +21,7 @@ export default function SingleBlog() {
         setData(response.data);
       } catch (err) {
         setError(err.response);
-        console.log(error);
+        console.log(err);
         
         setData({ title: 'Error', body: 'Error fetching data: '});
       } finally {
@@ -29,9 +30,21 @@ export default function SingleBlog() {
     };
 
     fetchData();
-  }, []);
+  }, [postId]);
 
-  if (loading) return <h1 style={{color: "white", textAlign: "center",  marginTop:"50px" }}>Loading....</h1>;
+  if(loading){
+    return <Loading/>
+  }
+
+  if (error){
+  return <>
+  <div className="error-container">
+    <p className="error-main">Error : {error}</p>
+    <Button link='/' text="Go home"/>
+  </div>
+  </>;
+  }
+  
   return (
     <>
     <NavBar/>
@@ -40,28 +53,10 @@ export default function SingleBlog() {
     <section className="single-post-section">
         <div className="post-content-wrapper">
             
-            <div className="post-metadata-header">
                 <Button className="btn" text="Go back" link="/blog" />
-                
-                <div className="blog-post-dates">
-                    <p className="date-info published">
-                      Published: {data?.createdAt?.split('T')[0]}
-                    </p>
-
-                    {data?.createdAt !== data?.updatedAt && (
-                      <p className="date-info updated">
-                        Updated: {data?.updatedAt?.split('T')[0]}
-                      </p>
-                    )}
-  
-                </div>
-            </div>
 
             <article className="blog-article-body">
                 
-                <h1 className="post-page-title">
-                    {data.title}
-                </h1>
 
                   {data?.coverImg &&
                     <figure className="post-featured-image">
@@ -72,6 +67,23 @@ export default function SingleBlog() {
                     </figure>
                   }
                 
+                <h1 className="post-page-title">
+                    {data.title}
+                </h1>
+
+
+                  <div className="single-blog-post-dates">
+                    <p className="date-info published">
+                      Published: {data?.createdAt?.split('T')[0]}
+                    </p>
+
+                    {data?.createdAt !== data?.updatedAt && (
+                      <p className="date-info updated">
+                        Updated: {data?.updatedAt?.split('T')[0]}
+                      </p>
+                    )}
+                </div>
+
                 <div className="post-text-content">
     
                         
