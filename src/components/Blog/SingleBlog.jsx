@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import imgUrl from '/stock_image.jpg'
 import { Button } from "../Button";
 
 import parse from 'html-react-parser';
 import { useParams } from 'react-router-dom';
+
+import Giscus from '@giscus/react';
 
 export default function SingleBlog() {
   const [data, setData] = useState({});
@@ -82,7 +83,23 @@ export default function SingleBlog() {
                 </div>
             </article>
 
-
+            {/* Comment section */}
+             <Giscus
+              key={postId}
+              repo="Adil-km/my-portfolio"
+              repoId="R_kgDONoxWpA"
+              category="Blog Comments"
+              categoryId="DIC_kwDONoxWpM4CxwD5"
+              mapping="pathname"
+              strict="0"
+              reactionsEnabled="1"
+              emitMetadata="0"
+              inputPosition="bottom"
+              theme="dark"
+              lang="en"
+              loading="lazy"
+              crossorigin="anonymous"
+             />
         </div>
     </section>
 </div>
