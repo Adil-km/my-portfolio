@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../App.css'
 
-export const Button = ({text, glow=true, link=null, onClick=null, target = "_self"}) =>{
+export const Button = ({text, glow=true, link=null, onMouseDown=null, onClick=null, target = "_self"}) =>{
 
   const location = useLocation();
   const classes = glow ? "btn-glow" : "btn";
@@ -10,7 +10,8 @@ export const Button = ({text, glow=true, link=null, onClick=null, target = "_sel
     return (
       <button 
         className={classes} 
-        onClick={onClick} 
+        onClick={onClick}
+        onMouseDown={onMouseDown}
         disabled={link !== null && link !== ""}
       >
         {text}
@@ -24,6 +25,7 @@ export const Button = ({text, glow=true, link=null, onClick=null, target = "_sel
       <button 
         className={classes} 
         onClick={() => window.open(link, target)} 
+        onMouseDown={onMouseDown}
       >
         {text}
       </button>
@@ -42,6 +44,6 @@ export const Button = ({text, glow=true, link=null, onClick=null, target = "_sel
   }
 
   return (
-    <button className={classes}>{text}</button>
+    <button className={classes} onMouseDown={onMouseDown} >{text}</button>
   );
 }
