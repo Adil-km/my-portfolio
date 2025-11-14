@@ -10,7 +10,7 @@ export default function AddBlog () {
   const url = "/admin/add"
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
-  const [coverImg, setCoverImg] = useState("");
+  const [coverImg, setCoverImg] = useState(undefined);
   const [body, setBody] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const textareaRef = useRef(null);
@@ -159,7 +159,7 @@ const keyDown = (event) => {
 
         <form onSubmit={handleSubmit}>
           <input type="text" name="title" className="formInput" placeholder="Enter the title for the blog post" required value={title} onChange={(e)=>setTitle(e.target.value)} />
-          <input type="text" name="title" className="formInput" placeholder="Enter the url for the cover image" required value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
+          <input type="text" name="title" className="formInput" placeholder="Enter the url for the cover image"  value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
 
           <textarea 
             ref={textareaRef} 

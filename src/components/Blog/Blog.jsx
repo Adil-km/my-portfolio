@@ -3,6 +3,8 @@ import axios from 'axios';
 import { Button } from "../Button";
 import {NavBar} from "../NavBar" 
 import Loading from '../Loading';
+import Markdown from 'react-markdown';
+import ScrollToButton from '../ScrollToButton'
 
 export default function Blog() {
   const [data, setData] = useState(null);
@@ -46,17 +48,19 @@ export default function Blog() {
   
   const blogElements = blogPosts.map((blog, index) => (
     
-    <article className="blog-post-article" key={blog._id || index}>
+    <article className="card-items" key={blog._id || index}>
       {blog?.coverImg &&
         <img src={blog?.coverImg} alt="A relevant image for the blog post" className="blog-post-img-full" />
       }
       
-      <div className="blog-post-text-content-full">
+      <div className="blog-post-card">
         <h2 className="blog-post-main-title">{blog?.title}</h2>
         
-        <p className="blog-post-excerpt-full">
-          {blog?.body}
-        </p>
+        <div className="blog-post-excerpt-full">
+          <Markdown>
+            {blog?.body}
+          </Markdown>
+        </div>
 
       <div className="blog-post-footer">
 
@@ -72,7 +76,7 @@ export default function Blog() {
           )}
           
         </div>
-          <Button link={`/blog/${blog?._id}`} text="Continue Reading &rarr;"/>
+          <Button link={`/blog/${blog?._id}`} text="Continue Reading" icon={<span></span>}/>
       </div>
 
       </div>
@@ -92,6 +96,7 @@ export default function Blog() {
           </div>
         </div>
       </section>
+      <ScrollToButton/>
     </div>
   );
 }

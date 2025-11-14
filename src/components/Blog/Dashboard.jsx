@@ -87,7 +87,7 @@ export default function Dashboard() {
     {blog?.coverImg &&
       <img src={blog?.coverImg} alt="A relevant image for the blog post" className="blog-post-img-full" /> 
     }
-      <div className="blog-post-text-content-full">
+      <div className="blog-post-card">
         <h2 className="blog-post-main-title">{blog?.title}</h2>
         
         

@@ -12,7 +12,7 @@ export default function EditBlog () {
   const [error, setError] = useState(null);
 
   const [title, setTitle] = useState("");
-  const [coverImg, setCoverImg] = useState("");
+  const [coverImg, setCoverImg] = useState(undefined);
   const [body, setBody] = useState("");
   
   const url = "/admin/edit"
@@ -76,7 +76,9 @@ export default function EditBlog () {
 
         <form onSubmit={handleSubmit}>
             <input type="text" name="title" className="formInput" placeholder="Enter the title for the blog post" required value={title} onChange={(e)=>setTitle(e.target.value)} />
-            <input type="text" name="title" className="formInput" placeholder="Enter the url for the cover image" required value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
+            
+            <input type="text" name="coverImg" className="formInput" placeholder="Enter the url for the cover image"  value={coverImg} onChange={(e)=>setCoverImg(e.target.value)} />
+            
             <textarea rows={4} name="body" className="formInput" placeholder="Enter your blog content" required value={body} onChange={(e)=>setBody(e.target.value)} />
 
           <div className="formBtnDiv">
