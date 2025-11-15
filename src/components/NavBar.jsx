@@ -9,7 +9,8 @@ export const NavBar=({children, isAdmin= false})=>{
   
   const handleLogout = async () => {  
       try {
-          await api.get('/admin/logout'); 
+          const response = await api.get('/admin/logout'); 
+          console.log(response.data);
           
           navigate('/admin/auth'); 
 

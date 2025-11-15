@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Button } from "../Button";
 import {NavBar} from "../NavBar" 
 import Loading from '../Loading';
 import Markdown from 'react-markdown';
 import ScrollToButton from '../ScrollToButton'
+import api from '../axiosConfig';
 
 export default function Blog() {
   const [data, setData] = useState(null);
@@ -14,11 +14,12 @@ export default function Blog() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:5001/');
+        const response = await api.get('/');
         setData(response.data);
       } catch (err) {
         setError("Could not fetch blog data.");
-        console.log(err.response);
+        console.error(err.response);
+        
         
       } finally {
         setLoading(false);
@@ -69,7 +70,7 @@ export default function Blog() {
             Published: {blog?.createdAt?.split('T')[0]}
           </p>
 
-          {blog?.createdAt !== blog?.updatedAt && (
+          {blog?.createdAt.split('T')[0] !== blog?.updatedAt.split('T')[0] && (
             <p className="date-info updated">
               Updated: {blog?.updatedAt?.split('T')[0]}
             </p>
@@ -88,7 +89,7 @@ export default function Blog() {
       <NavBar/>
       <section className="blog-section">
         <div className="blog-section-content">
-          <span className="blog-title" id="span">📝 Blogs</span>
+          <span className="blog-title" id="span">Blogs📝</span>
           <div className="blog-container traditional-feed">
 
             {blogElements} 

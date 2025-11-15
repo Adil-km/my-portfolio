@@ -15,11 +15,9 @@ export default function Admin () {
 
     const authFetch = async()=>{
       try {
-        
         const response = await api.post(url, {username:username, password:password})
         console.log(response.data);
         navigate('/admin/posts')
-        
       } catch (error) {
         
         console.log("Login Error: ", error.response);
@@ -34,7 +32,7 @@ export default function Admin () {
 
   return (
     <>
-    <NavBar isAdmin={true}/>
+    <NavBar/>
       <div className="form-container">
         <div className="form-back-btn">
           <Button className="btn" text="Go back" link="/" />

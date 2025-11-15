@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Button } from "../Button";
 
 import { useParams } from 'react-router-dom';
+import api from '../axiosConfig';
 
 import Markdown from 'react-markdown'
 import Giscus from '@giscus/react';
@@ -19,12 +19,12 @@ export default function SingleBlog() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:5001/${postId}`);
+        const response = await api.get(`/${postId}`);
           setData(response.data);
         
       } catch (err) {
         setError(err.response);
-        console.log(err);
+        console.error(err);
         
         setData({ title: 'Error', body: 'Error fetching data: '});
       } finally {
@@ -95,7 +95,7 @@ export default function SingleBlog() {
                 Published: {data?.createdAt?.split('T')[0]}
               </p>
 
-              {data?.createdAt !== data?.updatedAt && (
+              {data?.createdAt.split('T')[0] !== data?.updatedAt.split('T')[0] && (
                 <p className="date-info updated">
                   Updated: {data?.updatedAt?.split('T')[0]}
                 </p>

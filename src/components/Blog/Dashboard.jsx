@@ -59,7 +59,15 @@ export default function Dashboard() {
     }
   }
 
-
+const logout = async ()=>{
+    try {
+      const response = await api.get("/admin/logout");
+      console.log(response.data);
+      setError(null);
+    } catch (error) {
+      setError(error.response);
+    }
+  }
   
   if (loading){
     return <h1 style={{ color: "white", textAlign: "center", marginTop: "50px" }}>Loading....</h1>;
@@ -72,9 +80,6 @@ export default function Dashboard() {
   if (blogPosts.length === 0) {
     return (
         <div className="main">
-            <NavBar blogPage={true}>
-                <Button className="btn" text="Add New Post" link="/admin/add" />
-            </NavBar>
             <h1 style={{ color: "yellow", textAlign: "center", marginTop: "50px" }}>No blog posts found.</h1>
         </div>
     );
@@ -126,7 +131,7 @@ export default function Dashboard() {
   return (
     
     <div className="main">
-      <NavBar>
+      <NavBar isAdmin={true}>
         <Button className="btn" text="Add New Post" link="/admin/add" />
       </NavBar>
   
