@@ -3,6 +3,14 @@
     {
       "source": "/:path*",
       "destination": "/index.html"
+    },
+    { 
+      "source": "/feed",
+      "destination": "/feed/index.xml"
+    },
+    { 
+      "source": "/feed/",
+      "destination": "/feed/index.xml"
     }
   ]
 }
