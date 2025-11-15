@@ -1,5 +1,4 @@
 import {about} from './data.jsx';
-import React from 'react';
 import DOMPurify from 'dompurify';
 import '../App.css';
 

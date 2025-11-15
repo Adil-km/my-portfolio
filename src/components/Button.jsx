@@ -1,27 +1,57 @@
 import { Link, useLocation } from 'react-router-dom';
 import '../App.css'
 
-export const Button = ({text, glow=true, link, target = "_self"}) =>{
+export const Button = ({text, glow=true, link=null,icon=null, onMouseDown=null, onClick=null, target = "_self"}) =>{
 
   const location = useLocation();
+  const classes = glow ? "btn-glow" : "btn";
+
+  if (onClick) {
+    return (
+      <button 
+        className={classes} 
+        onClick={onClick}
+        onMouseDown={onMouseDown}
+        disabled={link !== null && link !== ""}
+        target ={target}
+      >
+        {text}
+        {icon}
+      </button>
+    );
+  }
+
+  // 2. Handle smooth scrolling behavior (only on the root path)
+  if (location.pathname === '/' && link) {
+    return (
+      <button 
+        className={classes} 
+        onClick={() => window.open(link, target)} 
+        onMouseDown={onMouseDown}
+      >
+        {text}
+        {icon}
+      </button>
+    );
+  }
+
+  if (link) {
+    return (
+      <Link 
+        to={link}
+        className={classes} 
+        target={target}
+        >
+        {text}
+        {icon}
+      </Link>
+    );
+  }
 
   return (
-  <>
-
-  
-  {(location.pathname === '/')?
-  (
-    
-    //for smooth scrolling, I used button instead of Link
-  <button className={glow ? "btn-glow" : "btn"} onClick={() => window.open(link, target)} >{text}</button>
-  ):(
-    <Link 
-    to={link}
-    //if doesn't want the glow effect 
-    className={glow ? "btn-glow" : "btn"} target={target}>
-    {text}
-  </Link>
-  )}
-
-  </>);
+    <button className={classes} onMouseDown={onMouseDown} target ={target}>
+      {text}
+        {icon}
+    </button>
+  );
 }

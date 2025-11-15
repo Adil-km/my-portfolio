@@ -117,72 +117,96 @@ export const project = [
   
   export const skills = [
   {
-    id:1,
-    skill:'HTML',
-    imgUrl:"/html_logo.png",
-    level:'Proficient'
+    id: 1,
+    skill: 'ReactJs',
+    imgUrl: '/react_js_logo.png',
+    level: 'Intermediate'
   },
   {
-    id:2,
-    skill:'CSS',
-    imgUrl:"/css_logo.png",
-    level:'Proficient'
+    id: 2,
+    skill: 'JavaScript',
+    imgUrl: '/javascript_logo.png',
+    level: 'Intermediate'
   },
   {
-    id:3,
-    skill:'JavaScript',
-    imgUrl:"/javascript_logo.png",
-    level:'Intermediate'
+    id: 3,
+    skill: 'HTML',
+    imgUrl: '/html_logo.png',
+    level: 'Proficient'
   },
   {
-    id:4,
-    skill:'Python',
-    imgUrl:"/python_logo.png",
-    level:'Intermediate'
+    id: 4,
+    skill: 'CSS',
+    imgUrl: '/css_logo.png',
+    level: 'Proficient'
   },
   {
-    id:5,
-    skill:'ReactJs',
-    imgUrl:"/react_js_logo.png",
-    level:'Beginner'
+    id: 5,
+    skill: 'Node Js',
+    imgUrl: '/node_js_logo.png',
+    level: 'Beginner'
   },
   {
-    id:6,
-    skill:'Django',
-    imgUrl:"/django_logo.png",
-    level:'Beginner'
+    id: 6,
+    skill: 'Express Js',
+    imgUrl: '/express_js_logo.png',
+    level: 'Beginner'
   },
   {
-    id:7,
-    skill:'C',
-    imgUrl:"/c_logo.png",
-    level:'Intermediate'
+    id: 7,
+    skill: 'Python',
+    imgUrl: '/python_logo.png',
+    level: 'Intermediate'
   },
   {
-    id:8,
-    skill:'C++',
-    imgUrl:"/cpp_logo.png",
-    level:'Intermediate'
+    id: 8,
+    skill: 'Django',
+    imgUrl: '/django_logo.png',
+    level: 'Intermediate'
   },
   {
-    id:9,
-    skill:'C#',
-    imgUrl:"/c_sharp_logo.png",
-    level:'Beginner'
+    id: 9,
+    skill: 'Flask',
+    imgUrl: '/flask_logo.png',
+    level: 'Beginner'
   },
   {
-    id:10,
-    skill:'JAVA',
-    imgUrl:"/java_logo.png",
-    level:'Beginner'
+    id: 10,
+    skill: 'MongoDB',
+    imgUrl: '/mongodb_logo.png',
+    level: 'Beginner'
   },
   {
-    id:11,
-    skill:'Git',
-    imgUrl:"/git_logo.png",
-    level:'Intermediate'
+    id: 11,
+    skill: 'Git',
+    imgUrl: '/git_logo.png',
+    level: 'Intermediate'
+  },
+  {
+    id: 12,
+    skill: 'C++',
+    imgUrl: '/cpp_logo.png',
+    level: 'Intermediate'
+  },
+  {
+    id: 13,
+    skill: 'C',
+    imgUrl: '/c_logo.png',
+    level: 'Intermediate'
+  },
+  {
+    id: 14,
+    skill: 'JAVA',
+    imgUrl: '/java_logo.png',
+    level: 'Beginner'
+  },
+  {
+    id: 15,
+    skill: 'C#',
+    imgUrl: '/c_sharp_logo.png',
+    level: 'Beginner'
   }
-  ];
+];
   
   
   export const about =

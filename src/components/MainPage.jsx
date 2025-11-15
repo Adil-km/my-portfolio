@@ -4,6 +4,7 @@ import { AboutSection } from './AboutSection.jsx'
 import { SkillSection } from './SkillSection.jsx';
 import { ProjectSection } from './ProjectSection.jsx';
 import {Footer} from './Footer.jsx';
+import ScrollToButton from './ScrollToButton.jsx';
 
 export const MainPage = ()=>{
   
@@ -16,6 +17,7 @@ export const MainPage = ()=>{
       <SkillSection/>
       <ProjectSection/>
       <Footer/>
+      <ScrollToButton/>
     </div>
     </>
   );

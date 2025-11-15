@@ -39,7 +39,9 @@ export const ProjectSection = () => {
     <>
       <div className="project-section" id="projects">
             <div className="project-section-content">
-            <span id="span">My projects🚀</span>
+            <span id="span">My projects<span className="project-loader-icon"></span>
+            
+            </span>
               
               <div className="card-container" >
               {projectList}
