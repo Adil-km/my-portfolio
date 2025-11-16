@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback } from 'react';
-import api from '../axiosConfig'; 
+import api from '../../utils/axiosConfig'
 import { Button } from "../Button";
 import { useNavigate } from 'react-router-dom';
 import { NavBar } from '../NavBar';
@@ -137,7 +137,7 @@ const logout = async ()=>{
   
       <section className="blog-section">
         <div className="blog-section-content">
-          <span className="blog-title" id="span">📝 Admin Dashboard - Latest Articles</span>
+          <span className="blog-title" id="span">📝 Admin Dashboard - Code & Beyond✨</span>
           <div className="blog-container traditional-feed">
 
             {blogElements} 

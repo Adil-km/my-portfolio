@@ -1244,6 +1244,7 @@ position: relative;
   -webkit-user-select:none;
   user-select: none;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -1320,6 +1321,12 @@ position: relative;
   100% {
     box-shadow: 0 0px, -120.82px -16px;
   }
+}
+
+.loader-wait-message{
+  color: var(--white-faded-2);
+  padding-top: 10px;
+  font-size: 1.5rem;
 }
 
 /* project section icon */

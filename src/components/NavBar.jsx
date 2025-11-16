@@ -1,7 +1,7 @@
 import {Button} from './Button.jsx';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
-import api from './axiosConfig.js';
+import api from '../utils/axiosConfig.js'
 
 export const NavBar=({children, isAdmin= false})=>{
   const navigate = useNavigate()

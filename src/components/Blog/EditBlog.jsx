@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Button } from "../Button"
 import { useNavigate, useParams } from 'react-router-dom';
 import '../../App.css';
-import api from '../axiosConfig';
+import api from '../../utils/axiosConfig'
 
 export default function EditBlog () {
   const navigate = useNavigate();

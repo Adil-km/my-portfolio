@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { Button } from "../Button";
 
 import { useParams } from 'react-router-dom';
-import api from '../axiosConfig';
-
+import api from '../../utils/axiosConfig'
+import formatDate from '../../utils/formatDate';
 import Markdown from 'react-markdown'
 import Giscus from '@giscus/react';
 import { NavBar } from '../NavBar';
@@ -92,12 +92,12 @@ export default function SingleBlog() {
 
             <div className="single-blog-post-dates">
               <p className="date-info published">
-                Published: {data?.createdAt?.split('T')[0]}
+                Published: {formatDate(data?.createdAt?.split('T')[0])}
               </p>
 
-              {data?.createdAt.split('T')[0] !== data?.updatedAt.split('T')[0] && (
+              {formatDate(data?.createdAt.split('T')[0]) !== formatDate(data?.updatedAt.split('T')[0]) && (
                 <p className="date-info updated">
-                  Updated: {data?.updatedAt?.split('T')[0]}
+                  Updated: {formatDate(data?.updatedAt?.split('T')[0])}
                 </p>
               )}
             </div>

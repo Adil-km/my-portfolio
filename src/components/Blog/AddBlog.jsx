@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { Button } from "../Button"
 import '../../App.css';
 
-import api from '../axiosConfig'; 
+import api from '../../utils/axiosConfig'
 import { useNavigate } from 'react-router-dom';
 
 export default function AddBlog () {

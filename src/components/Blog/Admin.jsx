@@ -3,7 +3,7 @@ import { Button } from "../Button";
 import { useNavigate } from 'react-router-dom';
 import '../../App.css';
 
-import api from '../axiosConfig'; 
+import api from '../../utils/axiosConfig'
 import { NavBar } from '../NavBar';
 
 export default function Admin () {
