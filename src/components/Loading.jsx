@@ -7,15 +7,15 @@ function Loading() {
 
   const messages = [
     "Waiting? It’s waking up.",
-    "One sec - still loading!",
+    "It’s warming up from its nap!",
     "Almost there...",
+    "One sec - still loading!",
+    "Should speed up once it’s awake.",
+    "Thanks for being patient!",
     "Reason: the server goes to sleep on the free tier.",
     "So yeah, it naps after 15 minutes.",
     "That’s why it’s a bit slow right now.",
-    "It’s warming up from its nap!",
-    "Give it a moment to fully wake up.",
-    "Should speed up once it’s awake.",
-    "Thanks for being patient!"
+    "Give it a moment to fully wake up."
   ]
 
   useEffect(() => {

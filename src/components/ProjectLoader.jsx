@@ -22,7 +22,7 @@ export default function ProjectLoader() {
 
         setData(response.data);
       } catch (err) {
-        setError("Could not fetch blog data.");
+        setError("Could not fetch project data.");
       } finally {
         setLoading(false);
       }

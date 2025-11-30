@@ -9,6 +9,8 @@
 }
 
 :root {
+  color-scheme: light;
+
   --white: #FFFFFF;
   --white-secondary:#eeeeee;
   --white-faded-1: #565656;
@@ -22,6 +24,8 @@
 }
 
 html {
+  color-scheme: light;
+  forced-color-adjust: none;
   font-family: sans-serif;
   scroll-behavior: smooth;
   scroll-padding-top: 70px;
@@ -261,6 +265,9 @@ body {
   }
   .hero-section-text span{
    font-size: 1.7rem;
+  }
+  .hero-section-text .button-wrapper{
+    font-size: 1rem;
   }
   .profile-name{
    font-size: 2.7rem;
