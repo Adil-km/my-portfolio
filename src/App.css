@@ -4,9 +4,7 @@
   box-sizing: border-box;
   font-family: "Kanit", serif;
 
-/*   
-  border: 1px solid rgb(81, 255, 0);
-*/
+  /* border: 1px solid rgb(81, 255, 0); */
   
 }
 
@@ -68,10 +66,15 @@ html {
   padding: 10px;
 }
 
+.NavBar-items .btn,
+.NavBar-items .btn-glow{
+    margin-inline: 5px;
+}
+
 /* button */
 .btn {
+  font: inherit;
   text-decoration: none;
-  margin-right: 10px;
   padding: 10px;
   background-color: transparent;
   color: var(--white);
@@ -82,8 +85,8 @@ html {
 
 /*Glow effect on hover for buttons*/
 .btn-glow {
+  font: inherit;
   text-decoration: none;
-  margin-right: 10px;
   padding: 10px;
   background-color: transparent;
   color: var(--white);
@@ -206,6 +209,7 @@ body {
 }
 
 /* Hero section */
+
 .hero-section {
   display: flex;
   flex-direction: column;
@@ -245,6 +249,10 @@ body {
   transform: scale(1.01) rotate(0.5deg);
 }
 
+.button-wrapper{
+  font-size: 1rem;
+}
+
 /* to avoid clipping outside the screen */
 @media(max-width:900px){
   .hero-section-img{
@@ -259,7 +267,7 @@ body {
   }
 }
 
-@media(max-width:450px){
+@media(max-width:500px){
   .NavBar-items{
     align-self: center;
   }
@@ -436,6 +444,9 @@ strong:hover {
   margin-bottom: 20px;
 }
 
+.card-items > div:last-child button{
+  margin-right: 20px;
+}
 
 /* skill card */
 

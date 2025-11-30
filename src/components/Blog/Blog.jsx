@@ -98,8 +98,9 @@ const blogElements = blogPosts.map((blog, index) => (
   ));
 
   return (
-    <div className="main">
+    <>
       <NavBar/>
+    <div className="main">
       <section className="blog-section">
         <div className="blog-section-content">
           <span className="blog-title" id="span">Code & Beyond✨</span>
@@ -113,5 +114,6 @@ const blogElements = blogPosts.map((blog, index) => (
       <ScrollToButton/>
       <Footer/>
     </div>
+    </>
   );
 }

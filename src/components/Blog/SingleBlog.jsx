@@ -79,9 +79,11 @@ export default function SingleBlog() {
             {data?.coverImg &&
               <figure className="post-featured-image">
                   <img src={data?.coverImg} alt="A detailed image related to AI and code generation" className="post-image"/>
-                  <figcaption className="image-caption">
-                      Image showcasing AI integration in modern web development tools.
-                  </figcaption>
+                  {data?.figcaption &&
+                    <figcaption className="image-caption">
+                        Image showcasing AI integration in modern web development tools.
+                    </figcaption>
+                  }
               </figure>
             }
             

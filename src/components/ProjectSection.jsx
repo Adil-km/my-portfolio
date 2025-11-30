@@ -27,7 +27,7 @@ export const ProjectSection = () => {
       </div>
         
       <div>
-        {project.demo && <Button link={project.demo} text="View Demo" target='_blank'/>}
+        {project.demo && <Button link={`project?redirect=${project.demo}`} text="View Demo" target='_blank'/>}
         {project.code && <Button link={project.code} text="View Code" target='_blank'/>}
 
       </div>

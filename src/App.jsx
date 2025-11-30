@@ -14,6 +14,7 @@ import Dashboard from './components/Blog/Dashboard.jsx';
 
 import axios from 'axios';
 import EditBlog from './components/Blog/EditBlog.jsx';
+import ProjectLoader from './components/ProjectLoader.jsx';
 
 axios.defaults.withCredentials = true;
 
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/project/:link?" element={<ProjectLoader />} />
         
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/blog" element={<Blog />} />

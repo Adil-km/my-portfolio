@@ -61,7 +61,7 @@ export const Contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" className="formInput" placeholder="Enter your Name" required />
           <input type="email" name="email" className="formInput" placeholder="Enter your Email" required />
-          <textarea rows={1} name="message" className="formInput" placeholder="Enter your Message" required />
+          <textarea rows={3} name="message" className="formInput" placeholder="Enter your Message" required />
 
           <ReCAPTCHA
             ref={recaptchaRef}
