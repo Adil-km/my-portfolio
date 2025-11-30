@@ -107,7 +107,7 @@ export const project = [
       'Generates Anki-compatible CSV files',
       'Significantly reduces manual flashcard creation time'
     ],
-    tech:['Python', 'Flask', 'PostgreSQL', 'HTML', 'CSS', 'JavaScript', 'Gemini API', 'OCR Space API'],
+    tech:['Python', 'Flask', 'HTML', 'CSS', 'JavaScript', 'Gemini API', 'OCR Space API'],
     demo:'https://flashnote-8b6m.onrender.com',
     code:'https://github.com/Adil-km/FlashNote'
 
