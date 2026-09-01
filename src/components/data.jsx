@@ -111,7 +111,34 @@ export const project = [
     demo:'https://flashnote-8b6m.onrender.com',
     code:'https://github.com/Adil-km/FlashNote'
 
+  },
+{
+    id: 10,
+    title: 'National Cadet Corps (NCC) Web Portal',
+    description: 'A centralized administrative and operational portal to manage cadet profiles, track attendance dynamically, and facilitate unit communication with role-based access control.',
+    features: [
+      'Role-specific cadet dashboards with real-time statistics and activity charts',
+      'Dynamic batch attendance tracker with automated credit hour calculations',
+      'Granular Role-Based Access Control (RBAC) using custom dynamic user tags',
+      'Cloudinary-integrated media gallery and official digital circular distribution'
+    ],
+    tech: ['Python', 'Django', 'PostgreSQL', 'Cloudinary', 'JavaScript'],
+    code: 'https://github.com/Adil-km/NCC_Web_Portal'
+  },
+{
+    id: 11,
+    title: 'VideoGetter',
+    description: 'A serverless, stateless application for secure, cross-platform media retrieval from YouTube, Instagram, and Facebook.',
+    features: [
+      'Cross-platform media retrieval using Next.js App Router',
+      'Provider registry featuring API-key rotation, rate-limit handling, and scraper fallbacks',
+      'Custom streaming proxy that pipes media directly from CDNs to clients',
+      'Automated CORS handling and IP validation to reject private network targets'
+    ],
+    tech: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Node.js'],
+    demo: 'https://video-getter-tool.vercel.app/'
   }
+
   ];
   
   
