@@ -339,6 +339,12 @@ span {
   letter-spacing: 0.03em;
 }
 
+
+.resumeBtn{
+  /* margin: 10px; */
+  height: 46px;
+}
+
 /* about section */
 
 .about-section {

@@ -114,92 +114,103 @@ export const project = [
     id: 1,
     skill: 'ReactJs',
     imgUrl: '/react_js_logo.png',
-    level: 'Intermediate'
   },
   {
     id: 2,
     skill: 'JavaScript',
     imgUrl: '/javascript_logo.png',
-    level: 'Intermediate'
   },
   {
     id: 3,
-    skill: 'HTML',
-    imgUrl: '/html_logo.png',
-    level: 'Proficient'
+    skill: 'TypeScript',
+    imgUrl: '/typescript_logo.png',
   },
   {
     id: 4,
-    skill: 'CSS',
-    imgUrl: '/css_logo.png',
-    level: 'Proficient'
+    skill: 'NextJs',
+    imgUrl: '/next_js_logo.png',
   },
   {
     id: 5,
-    skill: 'Node Js',
-    imgUrl: '/node_js_logo.png',
-    level: 'Beginner'
+    skill: 'Python',
+    imgUrl: '/python_logo.png',
   },
   {
     id: 6,
-    skill: 'Express Js',
-    imgUrl: '/express_js_logo.png',
-    level: 'Beginner'
+    skill: 'HTML',
+    imgUrl: '/html_logo.png',
   },
   {
     id: 7,
-    skill: 'Python',
-    imgUrl: '/python_logo.png',
-    level: 'Intermediate'
+    skill: 'CSS',
+    imgUrl: '/css_logo.png',
   },
   {
     id: 8,
-    skill: 'Django',
-    imgUrl: '/django_logo.png',
-    level: 'Intermediate'
+    skill: 'TailwInd CSS',
+    imgUrl: '/tailwindcss_logo.png',
   },
   {
     id: 9,
-    skill: 'Flask',
-    imgUrl: '/flask_logo.png',
-    level: 'Beginner'
+    skill: 'NodeJs',
+    imgUrl: '/node_js_logo.png',
   },
   {
     id: 10,
-    skill: 'MongoDB',
-    imgUrl: '/mongodb_logo.png',
-    level: 'Beginner'
+    skill: 'ExpressJs',
+    imgUrl: '/express_js_logo.png',
   },
   {
     id: 11,
-    skill: 'Git',
-    imgUrl: '/git_logo.png',
-    level: 'Intermediate'
+    skill: 'Django',
+    imgUrl: '/django_logo.png',
   },
   {
     id: 12,
-    skill: 'C++',
-    imgUrl: '/cpp_logo.png',
-    level: 'Intermediate'
+    skill: 'FastAPI',
+    imgUrl: '/fastapi_logo.png',
   },
   {
     id: 13,
-    skill: 'C',
-    imgUrl: '/c_logo.png',
-    level: 'Intermediate'
+    skill: 'Flask',
+    imgUrl: '/flask_logo.png',
   },
   {
     id: 14,
-    skill: 'JAVA',
-    imgUrl: '/java_logo.png',
-    level: 'Beginner'
+    skill: 'MongoDB',
+    imgUrl: '/mongodb_logo.png',
   },
   {
     id: 15,
-    skill: 'C#',
-    imgUrl: '/c_sharp_logo.png',
-    level: 'Beginner'
-  }
+    skill: 'PostgreSQL',
+    imgUrl: '/postgresql_logo.png',
+  },
+  {
+    id: 16,
+    skill: 'Git',
+    imgUrl: '/git_logo.png',
+  },
+  // {
+  //   id: 17,
+  //   skill: 'C++',
+  //   imgUrl: '/cpp_logo.png',
+  // },
+  // {
+  //   id: 18,
+  //   skill: 'C',
+  //   imgUrl: '/c_logo.png',
+  // },
+  // {
+  //   id: 19,
+  //   skill: 'JAVA',
+  //   imgUrl: '/java_logo.png',
+  // },
+  // {
+  //   id: 20,
+  //   skill: 'C#',
+  //   imgUrl: '/c_sharp_logo.png',
+  // },
+
 ];
   
   
