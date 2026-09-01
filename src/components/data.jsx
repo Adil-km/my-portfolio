@@ -19,40 +19,7 @@ export const project = [
     code:'https://github.com/Adil-km/qr-code-genrator'
   },
   
-  {
-    id:3,
-    title: 'To-Do List',
-    description: 'A simple to-do list application to add and delete tasks. Tasks are saved using local storage.',
-    features:['Task management','Local storage integration','Responsive UI'],
-    tech:['HTML','CSS','JavaScript'], 
-    demo:'https://to-do-list-demo.pages.dev',
-    code:'https://github.com/Adil-km/to-do-list'
-  },
-
-  {
-    id:4,
-    title: 'To-Do List with Django',
-    description: 'A simple web-based To-Do app built with Django.',
-    features:['User authentication for personal task management','Filter by active or completed status','SQLite database for persistent storage'],
-    tech:['Python','HTML','CSS','JavaScript'],
-    demo:'https://adilkm.pythonanywhere.com',
-    code:'https://github.com/Adil-km/to-do-list-django'
-  },
-
-  {
-    id: 5,
-    title: 'Flask TODO App',
-    description: 'A simple CRUD (Create, Read, Update, Delete) To-Do application built with the Flask web framework, utilizing SQLite for persistent storage.',
-    features:[
-      'CRUD functionality for tasks (Create, Read, Update, Delete)',
-      'SQLite database integration for storage',
-      'Minimal and clean interface',
-      'Foundation project for learning Flask'
-    ],
-    tech:['Python', 'Flask', 'HTML', 'CSS', 'SQLite'],
-    demo:'https://flask-todo-app-bix3.onrender.com',
-    code:'https://github.com/adil-km/flask-todo-app'
-  },
+  
 
   {
     id: 6,
@@ -136,7 +103,7 @@ export const project = [
       'Automated CORS handling and IP validation to reject private network targets'
     ],
     tech: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Node.js'],
-    demo: 'https://video-getter-tool.vercel.app/'
+    demo: 'https://video-getter-tool.vercel.app'
   }
 
   ];
