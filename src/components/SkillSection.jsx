@@ -1,4 +1,4 @@
-import {skills} from './data.jsx';
+import {skills} from '../../data/data.jsx';
 import "../App.css";
 
 export const SkillSection = () =>{

@@ -1,16 +1,6 @@
 export const project = [
   {
-    id:1,
-    title: 'Image to PDF Converter',
-    description: 'Convert a single image to a PDF file using an API. A simple tool for quick image-to-PDF conversions.',
-    features:['PDF generation via API','Download the generated PDF','Easy-to-use interface'],
-    tech:['HTML','CSS','JavaScript'],
-    demo:'https://img-to-pdf.pages.dev',
-    code:'https://github.com/Adil-km/img-to-pdf-converter'
-  },
-  
-  {
-    id:2,
+    id: 1,
     title: 'QR Code Generator',
     description: 'Generate QR codes for any text or URL using an API. The QR codes are downloadable for easy use.',
     features:['Generate QR codes for any input text or URL','API integration','Downloadable QR codes for offline use'],
@@ -19,10 +9,9 @@ export const project = [
     code:'https://github.com/Adil-km/qr-code-genrator'
   },
   
-  
 
   {
-    id: 6,
+    id: 2,
     title: 'PathWave',
     description: 'A unique web application that converts an image of a pothole into a musical melody.',
     features:[
@@ -35,22 +24,9 @@ export const project = [
     demo:'https://pathwave.onrender.com',
     code:'https://github.com/Adil-km/PathWave.git'
   },
+  
   {
-    id: 7,
-    title: 'TCP Client–Server Simulation',
-    description: 'A fundamental implementation of a TCP client and server in C, allowing bidirectional data transfer over a network socket.',
-    features:[
-      'Establish a connection between client and server',
-      'Bidirectional data sending and receiving',
-      'Socket programming demonstration',
-      'Designed for Linux systems'
-    ],
-    tech:['C', 'Linux/POSIX Sockets', 'TCP/IP'],
-    code:'https://github.com/Adil-km/TCP-Client-Server-Implementation'
-  },
-
-  {
-    id: 8,
+    id: 3,
     title: 'TicTacToe Game',
     description: 'A sleek, modern, and responsive Tic-Tac-Toe game supporting Player vs Player and Player vs AI (Minimax algorithm) modes.',
     features:[
@@ -64,8 +40,37 @@ export const project = [
     code:'https://github.com/Adil-km/TicTacToe-Game'
   },
   {
+    id: 4,
+    title: 'Lewish Fashion',
+    description: "A modern frontend fashion store website showcasing premium women's kurta collections with a clean and responsive shopping experience.",
+    features: [
+    "Premium women's kurta product showcase",
+    'Smooth and premium animations',
+    'Responsive design for all devices',
+    'Modern and user-friendly shopping interface'
+    ],
+    tech: ['React.js', 'vite' ,'Front-end'],
+    demo: 'https://lewishfashion.vercel.app'
+},
 
-    id: 9,
+  {
+    id: 5,
+    title: 'CaniBunk',
+    description: 'A simple attendance calculator that helps students track attendance, calculate safe classes to skip, recover attendance, and predict when they will reach the target percentage.',
+    features: [
+    'Calculate safe classes to skip',
+    'Calculate required classes to recover attendance',
+    'Predict the date to reach target attendance',
+    'Predefined college attendance presets',
+    'Interactive sound effects using Howler.js'
+    ],
+    tech: ['React.js', 'Tailwind CSS', 'vite', 'Howler.js', 'PWA'],
+    demo: 'https://canibunk.vercel.app'
+    },
+
+  {
+
+    id: 6,
     title: 'FlashNote',
     description: 'An AI-powered tool that automatically converts study materials (PDF, image, or text) into structured, ready-to-import Anki flashcard CSV files.',
     features:[
@@ -80,20 +85,20 @@ export const project = [
 
   },
 {
-    id: 10,
+    id: 7,
     title: 'National Cadet Corps (NCC) Web Portal',
     description: 'A centralized administrative and operational portal to manage cadet profiles, track attendance dynamically, and facilitate unit communication with role-based access control.',
     features: [
       'Role-specific cadet dashboards with real-time statistics and activity charts',
       'Dynamic batch attendance tracker with automated credit hour calculations',
       'Granular Role-Based Access Control (RBAC) using custom dynamic user tags',
-      'Cloudinary-integrated media gallery and official digital circular distribution'
+      'Cloudinary-integrated media gallery'
     ],
     tech: ['Python', 'Django', 'PostgreSQL', 'Cloudinary', 'JavaScript'],
     code: 'https://github.com/Adil-km/NCC_Web_Portal'
   },
 {
-    id: 11,
+    id: 8,
     title: 'VideoGetter',
     description: 'A serverless, stateless application for secure, cross-platform media retrieval from YouTube, Instagram, and Facebook.',
     features: [
@@ -102,7 +107,7 @@ export const project = [
       'Custom streaming proxy that pipes media directly from CDNs to clients',
       'Automated CORS handling and IP validation to reject private network targets'
     ],
-    tech: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Node.js'],
+    tech: ['Next.js', 'TypeScript', 'React', 'Tailwind CSS', 'Node.js', 'PWA'],
     demo: 'https://video-getter-tool.vercel.app'
   }
 
@@ -217,6 +222,6 @@ export const project = [
   export const about =
     {
       title: "My Path 🛤️",
-      description:"<p>I believe luck is something you create through dedication. Since childhood, my curiosity pushed me to explore, even when failure was the only result. Everything changed when I asked myself, <strong>“What if I tried? What if it worked?”</strong></p><p><strong>The world is full of noise and doubt</strong>, but I take that as a sign I’m moving forward. I reflect on what matters and let go of what holds me back.</p><p>I’m not here for attention. I’m here to build, to keep moving, and to support others on their journey. Real impact often happens quietly, through <strong>consistent action and genuine connection.</strong></p><p><strong>Progress speaks for itself.</strong> I want my work to spark momentum that others can carry forward.<p>"
+      description:"<p>I believe luck is something you create through dedication. Since childhood, my curiosity pushed me to explore, even when failure was the only result. Everything changed when I asked myself, <strong>“What if I tried? What if it worked?”</strong></p><p><strong>The world is full of noise and doubt</strong>, but I take that as a sign I'm moving forward. I reflect on what matters and let go of what holds me back.</p><p>I'm not here for attention. I'm here to build, to keep moving, and to support others on their journey. Real impact often happens quietly, through <strong>consistent action and genuine connection.</strong></p><p><strong>Progress speaks for itself.</strong> I want my work to spark momentum that others can carry forward.<p>"
     };
     

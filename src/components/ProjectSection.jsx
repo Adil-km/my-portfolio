@@ -1,4 +1,4 @@
-import { project } from './data.jsx';
+import { project } from '../../data/data.jsx';
 
 import { Button } from './Button.jsx';
 

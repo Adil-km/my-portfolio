@@ -1,4 +1,4 @@
-import {about} from './data.jsx';
+import {about} from '../../data/data.jsx';
 import DOMPurify from 'dompurify';
 import '../App.css';
 
